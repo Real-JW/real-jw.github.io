@@ -10,14 +10,14 @@
   </HEAD>
 
 
-  <TITLE>About</TITLE>
+  <TITLE>RealJW</TITLE>
 
   <style type="text/css">
     body{
   background-color: #f8d3cb;
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 5%
+  margin-bottom: 5%;
 }
 
 .mainContainer {
@@ -70,21 +70,41 @@
   border-radius: 16px;
 }
     
-  </style>
-  
-  <BODY bgcolor=#f8d3cb>
+    <div className="mainContainer">
+      <div className="dataContainer">
+        <div className="text">
+        😘😘😘
+        </div>
 
- 	<h1>About</h1>
-      </div>
-    </div>   
-    
+        <div className="header">
+        Hi there!
+        </div>
 
-    <h2>About</h2>
+        <div className="text">
+        This is RealJW. 
+        </div>
+        
+        <div className="text">
+        I'm currently a student in Tianjin University.
+        </div>
+        
+        <div className="bio">
+        Connect your Ethereum MetaMask wallet and send a message to me!
+        </div>
 
-    My name is RealJW
+        <input value={value} 
+          onChange={onChange} 
+          style={{ backgroundColor: "white", 
+                  marginTop: "16px", 
+                  padding: "12px",
+                  border: "0px",
+                  'border-radius': "16px",
+                  'font-size': '20px',
+                }} />
+        
+        <button className="waveButton" onClick={wave} style={{color: "white"}}>
+          Send a message to Me
+        </button>
 
-    &copy; Copyright 2022 RealJW
-
-  </BODY>
   
 </HTML>
