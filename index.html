@@ -1,12 +1,7 @@
-<HTML>
-
-  <HEAD>
-
-    <meta charset="UTF-8">
-
   </HEAD>
 
 
+  <TITLE>About</TITLE>
   <TITLE>RealJW</TITLE>
 
   <style type="text/css">
@@ -14,70 +9,65 @@
   background-color: #f8d3cb;
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 5%
   margin-bottom: 5%;
 }
 
 .mainContainer {
-  display: flex;
-  color: #be5969;
-  justify-content: center;
-  width: 100%;
-  margin-top: 48px;
-}
-
-.dataContainer {
-  display: flex;
-  color: #be5969;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 720px;
-}
-
-.header {
-  text-align: left;
-  color: #be5969;
-  font-size: 80px;
-  font-weight: 800;
-}
-
-.text {
-  text-align: left;
-  color: #be5969;
-  margin-top: 16px;
-  font-size: 48px;
-  font-weight: 600;
-}
-
-.bio {
-  text-align: left;
-  color: #be5969;
-  margin-top: 16px;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.waveButton {
-  cursor: pointer;
-  background: #be5969;
-  margin-top: 16px;
-  padding: 12px;
-  font-size: 20px;
-  font-weight: 600;
-  border: 0;
+@@ -70,21 +70,41 @@
   border-radius: 16px;
 }
 
-  <BODY bgcolor = #f8d3cb>
-    <div class = "mainContainer">
-      <div class = "dataContainer">
-        <div class ="text">
-        Hi there!
-        This is RealJW. 
-        I'm currently a student in Tianjin University.       
+  </style>
+
+  <BODY bgcolor=#f8d3cb>
+
+ 	<h1>About</h1>
+      </div>
+    </div>   
+
+
+    <h2>About</h2>
+
+    My name is RealJW
+
+    &copy; Copyright 2022 RealJW
+    <div className="mainContainer">
+      <div className="dataContainer">
+        <div className="text">
+        😘😘😘
         </div>
-     </div>
-     </div>
-        
+
+        <div className="header">
+        Hi there!
+        </div>
+
+        <div className="text">
+        This is RealJW. 
+        </div>
+
+        <div className="text">
+        I'm currently a student in Tianjin University.
+        </div>
+
+        <div className="bio">
+        Connect your Ethereum MetaMask wallet and send a message to me!
+        </div>
+
+        <input value={value} 
+          onChange={onChange} 
+          style={{ backgroundColor: "white", 
+                  marginTop: "16px", 
+                  padding: "12px",
+                  border: "0px",
+                  'border-radius': "16px",
+                  'font-size': '20px',
+                }} />
+
+        <button className="waveButton" onClick={wave} style={{color: "white"}}>
+          Send a message to Me
+        </button>
+
   </BODY>
-  
+
 </HTML>
