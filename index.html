@@ -1,55 +1,93 @@
+<HTML>
+
+  <HEAD>
+    <meta charset="UTF-8">
   </HEAD>
 
-
-  <TITLE>About</TITLE>
   <TITLE>RealJW</TITLE>
 
-  <style type="text/css">
-    body{
-  background-color: #f8d3cb;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%
-  margin-bottom: 5%;
+<style type="text/css">
+  body, html{
+    background-color: #f8d3cb;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
 }
 
 .mainContainer {
-@@ -70,21 +70,41 @@
-  border-radius: 16px;
+  display: flex;
+  color: #be5969;
+  justify-content: center;
+  width: 100%;
+  margin-top: 48px;
 }
 
-  </style>
+.dataContainer {
+  display: flex;
+  color: #be5969;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1080px;
+}
 
-  <BODY bgcolor=#f8d3cb>
+.header {
+  text-align: left;
+  color: #be5969;
+  font-size: 80px;
+  font-weight: 800;
+  font-family: "gotham";
+}
 
- 	<h1>About</h1>
+.text {
+  text-align: left;
+  color: #be5969;
+  margin-top: 16px;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "gotham";
+}
+
+.bio {
+  text-align: left;
+  color: #be5969;
+  margin-top: 16px;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "gotham";
+}
+
+.waveButton {
+  cursor: pointer;
+  background: #be5969;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 12px;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "gotham";
+  border: 0;
+  border-radius: 20px;
+}
+
+</style>
+
+<BODY>
+
+  <div class="mainContainer">
+    <div class="dataContainer">
+
+      <div class="header">
+      Hi there!
       </div>
-    </div>   
 
+      <div class="text">
+      This is RealJW. I'm currently a student in Tianjin University.
+      </div>
 
-    <h2>About</h2>
-
-    My name is RealJW
-
-    &copy; Copyright 2022 RealJW
-    <div className="mainContainer">
-      <div className="dataContainer">
-        <div className="text">
-        😘😘😘
-        </div>
-
-        <div className="header">
-        Hi there!
-        </div>
-
-        <div className="text">
-        This is RealJW. 
-        </div>
-
-        <div className="text">
-        I'm currently a student in Tianjin University.
-        </div>
-
-  </BODY>
+      <button class="waveButton", style = "color:#f8d3cb">
+        wujiawen@tju.edu.cn
+      </button>
+  &copy; Copyright 2022 RealJW
+</BODY>
 
 </HTML>
