@@ -1,7 +1,8 @@
 <HTML>
-
   <HEAD>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+
     <style>
       img {
         align-self: center;
@@ -12,7 +13,7 @@
   <TITLE>RealJW</TITLE>
 
 <style type="text/css">
-  body, html{
+body, html{
     /* background-color: #f8d3cb; */
     margin-left: 5%;
     margin-right: 5%;
@@ -40,7 +41,7 @@
   color: #000000;
   font-size: 64px;
   font-weight: 800;
-  font-family: "gotham";
+  font-family: "arial";
   margin-top: 16px;
   }
 
@@ -49,8 +50,8 @@
   color: #000000;
   margin-top: 8px;
   font-size: 48px;
-  font-weight: 400;
-  font-family: "gotham";
+  font-weight: 550;
+  font-family: "arial";
 }
 
 .boxText {
@@ -59,7 +60,7 @@
   margin-left: 8px;
   font-size: 36px;
   font-weight: 800;
-  font-family: "gotham";
+  font-family: "arial";
 }
 
 .bio {
@@ -67,8 +68,8 @@
   color: #ffffff;
   /* margin-top: 16px; */
   font-size: 24px;
-  font-weight: 400;
-  font-family: "gotham";
+  font-weight: 550;
+  font-family: "arial";
 }
 
 .box {
@@ -77,19 +78,19 @@
   margin-bottom: 16px;
   padding: 12px;
   font-size: 64px;
-  font-weight: 600;
-  font-family: "gotham";
+  font-weight: 550;
+  font-family: "arial";
   border: 0;
   border-radius: 30px;
 }
 
 .box1 {
   background: #f8d3cb;
-  margin-top: 16px;
+  margin-top: 12px;
   padding: 12px;
   font-size: 48px;
-  font-weight: 400;
-  font-family: "gotham";
+  font-weight: 550;
+  font-family: "arial";
   border: 0;
   border-radius: 20px;
 }
@@ -99,20 +100,20 @@
   margin-top: 16px;
   margin-bottom: 16px;
   padding: 12px;
-  font-size: 48px;
-  font-weight: 400;
-  font-family: "gotham";
+  font-size: 64px;
+  font-weight: 550;
+  font-family: "arial";
   border: 0;
   border-radius: 30px;
 }
 
 .box21 {
   background: #d2fde7;
-  margin-top: 16px;
+  margin-top: 12px;
   padding: 12px;
   font-size: 48px;
-  font-weight: 400;
-  font-family: "gotham";
+  font-weight: 550;
+  font-family: "arial";
   border: 0;
   border-radius: 20px;
 }
@@ -124,18 +125,44 @@
   margin-bottom: 16px;
   padding: 12px;
   font-size: 48px;
-  font-weight: 400;
-  font-family: "gotham";
+  font-weight: 550;
+  font-family: "arial";
   border: 0;
   border-radius: 20px;
 }
 
+.copyRight {
+  text-align: center;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "arial";
+}
 </style>
 
-<BODY>
+<script>
+  (function(doc, win) {
+    var docEl = doc.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function() {
+      var clientWidth = docEl.clientWidth;
+      if(!clientWidth) return;
+      if(clientWidth >= 750) {
+        docEl.style.fontSize = '100px';
+      } else {
+        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+      }
+    };
+    if(!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+  })(document, window);
+</script>
 
+<BODY>
   <div class="mainContainer">
     <div class="dataContainer">
+
 
       <img src = "image002.png" alt = "Fingers Crossed" width="150" height="150" >
 
@@ -144,10 +171,13 @@
       </div>
 
       <div class="text">
-        This is Jiawen Wu's (武嘉闻) homepage
+        This is Jiawen Wu's homepage 😘
       </div>
       <div class="text">
         I'm currently a student in School of Microelectronics, Tianjin University
+      </div>
+      <div class="text">
+        Check out my latest works!!!
       </div>
 
       <div class="box">
@@ -155,7 +185,15 @@
           Projects
         </div>
 
-        <a href = "main/DataCenter.pdf" >
+        <a href = "https://github.com/Real-JW/2022_TJU_Python_Homework" style="text-decoration: none;">
+          <div class="box1">
+            <div class="bio", style = "color: #be5969;">
+              The final homework for class Modern Programing Techniques
+            </div>
+          </div>
+          </a>
+
+        <a href = "DataCenter.pdf" style="text-decoration: none;">
         <div class="box1">
           <div class="bio", style = "color: #be5969;">
             A research on datacenter network congestion control using ns-3 simulator
@@ -163,7 +201,7 @@
         </div>
         </a>
 
-        <a href = "main/GhostResNet.pdf">
+        <a href = "GhostResNet.pdf" style="text-decoration: none;">
         <div class="box1">
           <div class="bio", style = "color: #be5969;">
             Image classificaton using a hybrid of ResNet 50 and GhostNet
@@ -171,7 +209,7 @@
         </div>
       </a>
 
-      <a href = "main/Temp.pdf">
+      <a href = "Temp.pdf" style="text-decoration: none;">
         <div class="box1">
           <div class="bio", style = "color: #be5969;">
             Measuring body temperature with face recognition
@@ -179,7 +217,7 @@
         </div>
       </a>
 
-        <a href = "main/FPGA.pdf">
+        <a href = "FPGA.pdf" style="text-decoration: none;">
         <div class="box1">
           <div class="bio", style = "color: #be5969;">
             An Approach to License Plate Recognition System on FPGA
@@ -193,14 +231,21 @@
             Interests
           </div>
           
-          <a href = "https://portal.real-jw.repl.co/">
+          <a href = "https://github.com/Real-JW/ROS2-with-ResNet-in-Docker" style="text-decoration: none;">
+            <div class="box21">
+              <div class="bio", style = "color: #469c73;">
+                A ResNet18 image classificaton with ROS2 in Docker
+              </div>
+            </div>
+
+          <a href = "https://portal.real-jw.repl.co/" style="text-decoration: none;">
           <div class="box21">
             <div class="bio", style = "color: #469c73;">
               A blockchain project on web using Ethereum Rinkeby test network
             </div>
           </div>
           </a>
-          <a href = "https://opensea.io/Real-JW">
+          <a href = "https://opensea.io/Real-JW" style="text-decoration: none;">
           <div class="box21">
             <div class="bio", style = "color: #469c73;">
               Minted my own NFTs on OpenSea
@@ -215,9 +260,7 @@
           <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
         </svg>
       </a>
-    
-
-  &copy; Copyright 2022 RealJW
+      <div class = "copyRight">&copy; Copyright 2022 RealJW</div>
 </BODY>
 
 </HTML>
