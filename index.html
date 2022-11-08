@@ -14,32 +14,86 @@
 
 
 body, html{
-    background-color: #ffffff;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.main{
+
+  width: 100%;
 }
 
 .mainContainer {
   display: flex;
   color: #ffffff;
   justify-content: center;
+  /* width: 100%; */
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.mainContainer2 {
+  display: flex;
+  background-color: #000000;
+  background-size: 100%;
+  color: #000000;
+  justify-content: center;
   width: 100%;
-  margin-top: 24px;
 }
 
 .dataContainer {
   display: flex;
   color: #ffffff;
   flex-direction: column;
-  justify-content: center;
-  max-width: 1000px;
+  justify-content: normal;
+  max-width: 960px;
+  
+
 }
+
+.dataContainer2 {
+  display: grid;
+  width: 960px;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 100%;
+}
+
+.dataContainer3 {
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+}
+
+img{
+  max-width:150px;
+  max-height:150px;
+  width:auto;
+  height:auto;
+  }
 
 .header1 {
   text-align: left;
-  color: #000000;
+  color: #ffffff;
   font-size: 48px;
+  font-weight: 600;
+  font-family: "arial";
+  margin-top: 16px;
+  margin-bottom: 8px;
+  }
+
+.header2 {
+  text-align: right;
+  color: #000000;
+  font-size: 24px;
   font-weight: 600;
   font-family: "arial";
   margin-top: 16px;
@@ -50,13 +104,22 @@ body, html{
   text-align: left;
   color: #969696;
   margin-top: 8px;
-  margin-bottom: 8px;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 600;
   font-family: "arial";
 }
 
 .text2 {
+  text-align: left;
+  color: #ffffff;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "arial";
+}
+
+.text3 {
   text-align: left;
   color: #000000;
   margin-top: 8px;
@@ -79,6 +142,7 @@ body, html{
   font-size: 24px;
   font-weight: 600;
   font-family: "arial";
+  color: #FFFFFF;
 }
 
 .bio1 {
@@ -91,7 +155,6 @@ body, html{
 .box1 {
   background: #be5969;
   margin-top: 16px;
-  margin-bottom: 16px;
   padding: 12px;
   border: 0;
   border-radius: 30px;
@@ -108,7 +171,6 @@ body, html{
 .box2 {
   background: #469c73;
   margin-top: 16px;
-  margin-bottom: 16px;
   padding: 12px;
   border: 0;
   border-radius: 30px;
@@ -125,7 +187,6 @@ body, html{
 .box3 {
   background: #5987b5;
   margin-top: 16px;
-  margin-bottom: 16px;
   padding: 12px;
   border: 0;
   border-radius: 30px;
@@ -142,7 +203,6 @@ body, html{
 .box4 {
   background: #949494;
   margin-top: 16px;
-  margin-bottom: 16px;
   padding: 12px;
   border: 0;
   border-radius: 30px;
@@ -171,11 +231,12 @@ body, html{
 
 .copyRight {
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 500;
   font-family: "arial";
   margin-top: 12px;
+  margin-bottom: 12px;
 }
 </style>
 
@@ -184,34 +245,39 @@ body, html{
 </script> -->
 
 <BODY>
+  <div class="main">
+      <div class = "mainContainer2">
+        <div class="dataContainer2">
+          <div class = "dataContainer">
+          <div class="header1">
+          Jiawen Wu
+          </div>
+          <div class="text2">
+            School of Microelectronics,<br/> Tianjin University
+          </div>
+          </div>
+    
+          <div class="dataContainer3">
+            <div class="copyRight">
+            <a href = "https://real-jw.github.io" style="text-decoration: none;">
+            <img src = "image002.png" alt = "Fingers Crossed" width="150" height="150" >
+            </a>
+            </div>
+            </div>
+          </div>
+          
+      </div>
+
+
   <div class="mainContainer">
     <div class="dataContainer">
-      <div class="header1">
-        
-      </div>
-      <div class="copyRight">
-      <a href = "https://real-jw.github.io" style="text-decoration: none;">
-      <img src = "image002.png" alt = "Fingers Crossed" width="150" height="150" >
-      </a>
-    </div>
 
-      <div class="header1">
-        Jiawen Wu
-      </div>
-      <div class="text2">
-        School of Microelectronics,<br/> Tianjin University
-      </div>
-      <div class="text2">
-        <b>wujiawen@tju.edu.cn</b>
-      </div>
 
-      " "
+
       <div class="text1">
         Hi there!<br/>
         I am currently looking for a Ph.D. position opening.
       </div>
-
-      " "
 
       <div class="box1">
         <div class="boxText">
@@ -327,7 +393,7 @@ body, html{
         <div class="boxText">
           Contact
         </div>
-        
+        <div class="dataContainer">
         <a href = "wujiawen@tju.edu.cn" style="text-decoration: none;">
           <div class="box41">
             <div class="bio", style = "color: #7e7e7e;">
@@ -346,19 +412,23 @@ body, html{
         <div class="box41">
           <div class="bio", style = "color: #7e7e7e;">
             Github
+            <svg height="24" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+              <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
           </div>
         </div>
       </a>
-      </div>
-
-    <div class = "copyRight">
-      <a class="header1-link " href="https://github.com/Real-JW" data-hotkey="g d" aria-label="Homepage " data-turbo="false" data-analytics-event="{&quot;category&quot;:&quot;header1&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;}">
-        <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
-          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-        </svg>
-      </a>
-      <div class = "copyRight">&copy; Copyright 2022 RealJW &ensp; (<i>Last Update: Nov. 2022</i>)</div>
     </div>
+  </div>
+  </div>
+  </div>
+
+  <div class = "mainContainer2">
+    <div class = "copyRight">&copy; Copyright 2022 RealJW &ensp; (<i>Last Update: Nov. 2022</i>)</div>
+  </div>
+
+</div>
+
 </BODY>
 
 </HTML>
