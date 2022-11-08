@@ -2,19 +2,19 @@
   <HEAD>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
-
+    <link rel="shortcut icon" typr="image/x-ico" href="favicon.ico" media="screen" />
     <style>
       img {
         align-self: center;
       }
     </style>
   </HEAD>
-
   <TITLE>RealJW</TITLE>
-
 <style type="text/css">
+
+
 body, html{
-    /* background-color: #f8d3cb; */
+    background-color: #ffffff;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
@@ -22,7 +22,7 @@ body, html{
 
 .mainContainer {
   display: flex;
-  color: #000000;
+  color: #ffffff;
   justify-content: center;
   width: 100%;
   margin-top: 24px;
@@ -30,67 +30,75 @@ body, html{
 
 .dataContainer {
   display: flex;
-  color: #000000;
+  color: #ffffff;
   flex-direction: column;
   justify-content: center;
   max-width: 1000px;
 }
 
-.header {
+.header1 {
   text-align: left;
   color: #000000;
   font-size: 56px;
-  font-weight: 800;
+  font-weight: 600;
   font-family: "arial";
   margin-top: 16px;
   }
 
-.text {
+.text1 {
+  text-align: left;
+  color: #383838;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "arial";
+}
+
+.text2 {
   text-align: left;
   color: #000000;
   margin-top: 8px;
-  font-size: 42px;
-  font-weight: 550;
+  font-size: 28px;
+  font-weight: 300;
   font-family: "arial";
 }
 
 .boxText {
   text-align: left;
-  color: #ffffff;
   margin-left: 8px;
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 600;
   font-family: "arial";
 }
 
 .bio {
   text-align: left;
-  color: #ffffff;
-  /* margin-top: 16px; */
   font-size: 24px;
-  font-weight: 550;
+  font-weight: 600;
   font-family: "arial";
 }
 
-.box {
+.bio1 {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "arial";
+}
+
+.box1 {
   background: #be5969;
   margin-top: 16px;
   margin-bottom: 16px;
   padding: 12px;
-  font-size: 48px;
-  font-weight: 550;
-  font-family: "arial";
   border: 0;
   border-radius: 30px;
 }
 
-.box1 {
+.box11 {
   background: #f8d3cb;
   margin-top: 12px;
   padding: 12px;
-  font-size: 48px;
-  font-weight: 550;
-  font-family: "arial";
   border: 0;
   border-radius: 20px;
 }
@@ -100,9 +108,6 @@ body, html{
   margin-top: 16px;
   margin-bottom: 16px;
   padding: 12px;
-  font-size: 64px;
-  font-weight: 550;
-  font-family: "arial";
   border: 0;
   border-radius: 30px;
 }
@@ -111,14 +116,45 @@ body, html{
   background: #d2fde7;
   margin-top: 12px;
   padding: 12px;
-  font-size: 48px;
-  font-weight: 550;
-  font-family: "arial";
   border: 0;
   border-radius: 20px;
 }
 
-.waveButton {
+.box3 {
+  background: #5987b5;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 0;
+  border-radius: 30px;
+}
+
+.box31 {
+  background: #d7f1ff;
+  margin-top: 12px;
+  padding: 12px;
+  border: 0;
+  border-radius: 20px;
+}
+
+.box4 {
+  background: #949494;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 0;
+  border-radius: 30px;
+}
+
+.box41 {
+  background: #ffffff;
+  margin-top: 12px;
+  padding: 12px;
+  border: 0;
+  border-radius: 20px;
+}
+
+.button {
   cursor: pointer;
   background: #be5969;
   margin-top: 16px;
@@ -137,26 +173,12 @@ body, html{
   font-size: 16px;
   font-weight: 500;
   font-family: "arial";
+  margin-top: 12px;
 }
 </style>
 
 <!-- <script>
-  (function(doc, win) {
-    var docEl = doc.documentElement,
-    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-    recalc = function() {
-      var clientWidth = docEl.clientWidth;
-      if(!clientWidth) return;
-      if(clientWidth >= 750) {
-        docEl.style.fontSize = '100px';
-      } else {
-        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
-      }
-    };
-    if(!doc.addEventListener) return;
-    win.addEventListener(resizeEvt, recalc, false);
-    doc.addEventListener('DOMContentLoaded', recalc, false);
-  })(document, window);
+=======================================================================================
 </script> -->
 
 <BODY>
@@ -166,101 +188,167 @@ body, html{
 
       <img src = "image002.png" alt = "Fingers Crossed" width="150" height="150" >
 
-      <div class="header">
-      Hi there! 你好
+      <div class="header1">
+        Jiawen Wu
+      </div>
+      <div class="text2">
+        School of Microelectronics,<br/> Tianjin University
+      </div>
+      <div class="text2">
+        <b>Email:</b> wujiawen@tju.edu.cn
       </div>
 
-      <div class="text">
-        This is Jiawen Wu's homepage 😘
-      </div>
-      <div class="text">
-        I'm currently a student in School of Microelectronics, Tianjin University
-      </div>
-      <div class="text">
-        Check out my latest works!!!
+      <div class="text1">
+        Hi there!<br/>
+        I am currently looking for a Ph.D. position opening.
       </div>
 
-      <div class="box">
+      <div class="box1">
         <div class="boxText">
-          Projects
+          Research
         </div>
 
-        <a href = "https://github.com/Real-JW/2022_TJU_Python_Homework" style="text-decoration: none;">
-          <div class="box1">
-            <div class="bio", style = "color: #be5969;">
-              The final homework for class Modern Programing Techniques
+        <a href = "http://www.ict.cas.cn/" style="text-decoration: none;">
+          <div class="box11">
+            <div class="bio", style = "color: #be5969;"; font-weight= "200;">
+              Post-Quantum Cryptography NTT Hardware Accelerator
+            </div>
+            <div class="bio1", style = "color: #be5969;">
+              State Key Laboratory of Computer Architecture, Institute of Computing Technology, Chinese Academy of Sciences
             </div>
           </div>
-          </a>
-
-        <a href = "DataCenter.pdf" style="text-decoration: none;">
-        <div class="box1">
-          <div class="bio", style = "color: #be5969;">
-            A research on datacenter network congestion control using ns-3 simulator
-          </div>
-        </div>
         </a>
 
-        <a href = "GhostResNet.pdf" style="text-decoration: none;">
-        <div class="box1">
-          <div class="bio", style = "color: #be5969;">
-            Image classificaton using a hybrid of ResNet 50 and GhostNet
+        <a href = "https://www.cs.hku.hk/" style="text-decoration: none;">
+          <div class="box11">
+            <div class="bio", style = "color: #be5969;">
+              Automatic Management of Devices for Robotic Applications
+            </div>
+            <div class="bio1", style = "color: #be5969;">
+              Department of Computer Science, The University of Hong Kong
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
 
-      <a href = "Temp.pdf" style="text-decoration: none;">
-        <div class="box1">
-          <div class="bio", style = "color: #be5969;">
-            Measuring body temperature with face recognition
+        <a href = "http://sme.tju.edu.cn/en_home/en/" style="text-decoration: none;">
+          <div class="box11">
+            <div class="bio", style = "color: #be5969;">
+              The Analysis of Data Center Network Congestion Control Solution
+              </div>
+              <div class="bio1", style = "color: #be5969;">
+              School of Microelectronics, Tianjin University
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
 
-        <a href = "FPGA.pdf" style="text-decoration: none;">
-        <div class="box1">
-          <div class="bio", style = "color: #be5969;">
-            An Approach to License Plate Recognition System on FPGA
-          </div>
-      </div>
-    </a>
+  </div>
 
-      </div>
         <div class="box2">
           <div class="boxText">
-            Interests
+            Projects
           </div>
           
+          <a href = "GhostResNet.pdf" style="text-decoration: none;">
+            <div class="box21">
+              <div class="bio", style = "color: #469c73;">
+                Image classificaton using a hybrid of ResNet 50 and GhostNet
+              </div>
+            </div>
+          </a>
+    
+          <a href = "Temp.pdf" style="text-decoration: none;">
+            <div class="box21">
+              <div class="bio", style = "color: #469c73;">
+                Measuring body temperature with face recognition
+              </div>
+            </div>
+          </a>
+    
+          <a href = "FPGA.pdf" style="text-decoration: none;">
+            <div class="box21">
+              <div class="bio", style = "color: #469c73;">
+                An Approach to License Plate Recognition System on FPGA
+              </div>
+          </div>
+        </a>
+
           <a href = "https://github.com/Real-JW/ROS2-with-ResNet-in-Docker" style="text-decoration: none;">
             <div class="box21">
               <div class="bio", style = "color: #469c73;">
                 A ResNet18 image classificaton with ROS2 in Docker
               </div>
             </div>
-
-          <a href = "https://portal.real-jw.repl.co/" style="text-decoration: none;">
-          <div class="box21">
-            <div class="bio", style = "color: #469c73;">
-              A blockchain project on web using Ethereum Rinkeby test network
-            </div>
-          </div>
           </a>
-          <a href = "https://opensea.io/Real-JW" style="text-decoration: none;">
-          <div class="box21">
-            <div class="bio", style = "color: #469c73;">
-              Minted my own NFTs on OpenSea
+
+          <a href = "https://github.com/Real-JW/2022_TJU_Python_Homework" style="text-decoration: none;">
+            <div class="box21">
+              <div class="bio", style = "color: #469c73;">
+                The final homework for class Modern Programing Techniques
+              </div>
             </div>
-          </div>
-        </a>
+            </a>
+
+
+
         </div>
 
+      <div class="box3">
+        <div class="boxText">
+          Interests
+        </div>
 
-      <a class="Header-link " href="https://github.com/Real-JW" data-hotkey="g d" aria-label="Homepage " data-turbo="false" data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;}">
+        <a href = "https://portal.real-jw.repl.co/" style="text-decoration: none;">
+        <div class="box31">
+          <div class="bio", style = "color: #5987b5;">
+            A blockchain project on web using Ethereum Rinkeby test network
+          </div>
+        </div>
+        </a>
+        <a href = "https://opensea.io/Real-JW" style="text-decoration: none;">
+        <div class="box31">
+          <div class="bio", style = "color: #5987b5;">
+            Minted my own NFTs on OpenSea
+          </div>
+        </div>
+      </a>
+      </div>
+
+      <div class="box4">
+        <div class="boxText">
+          Contact
+        </div>
+        
+        <a href = "wujiawen@tju.edu.cn" style="text-decoration: none;">
+          <div class="box41">
+            <div class="bio", style = "color: #7e7e7e;">
+              Email
+            </div>
+          </div>
+
+        <a href = "https://www.linkedin.cn/incareer/in/ACoAAC9oL8kBMcX0dLATwsnBXuE2khiKtO_Rofk" style="text-decoration: none;">
+        <div class="box41">
+          <div class="bio", style = "color: #7e7e7e;">
+            Linkedin
+          </div>
+        </div>
+        </a>
+        <a href = "https://github.com/Real-JW" style="text-decoration: none;">
+        <div class="box41">
+          <div class="bio", style = "color: #7e7e7e;">
+            Github
+          </div>
+        </div>
+      </a>
+      </div>
+
+    <div class = "copyRight">
+      <a class="header1-link " href="https://github.com/Real-JW" data-hotkey="g d" aria-label="Homepage " data-turbo="false" data-analytics-event="{&quot;category&quot;:&quot;header1&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;}">
         <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
           <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
         </svg>
       </a>
-      <div class = "copyRight">&copy; Copyright 2022 RealJW</div>
+      <div class = "copyRight">&copy; Copyright 2022 RealJW &ensp; (<i>Last Update: Nov. 2022</i>)</div>
+    </div>
 </BODY>
 
 </HTML>
