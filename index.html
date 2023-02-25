@@ -14,7 +14,7 @@
 
 
 body, html{
-  background-color: #ffffff;
+  background-color: #f5f5f7;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -39,6 +39,12 @@ body, html{
 
 .mainContainer2 {
   display: flex;
+  justify-content: center;
+  width:auto;
+}
+
+.mainContainer3 {
+  display: flex;
   background-color: #000000;
   background-size: 100%;
   color: #000000;
@@ -52,7 +58,7 @@ body, html{
   flex-direction: column;
   justify-content: normal;
   max-width: 960px;
-  
+  width:auto;
 
 }
 
@@ -63,30 +69,33 @@ body, html{
     margin-left: 3%;
     margin-right: 3%;
     margin-bottom: 3%;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 70% 30%;
   grid-template-rows: 100%;
 }
 
 .dataContainer3 {
   display: flex;
-  color: #ffffff;
-  justify-content: center;
+  align-items: center;
+  width: 250px;
 }
 
 img{
-  max-width:150px;
-  max-height:150px;
+  max-width:250px;
+  max-height:250px;
+  justify-content: center;
   width:auto;
   height:auto;
+  position: relative;
+  top: auto;
   }
 
 .header1 {
   text-align: left;
   color: #ffffff;
-  font-size: 48px;
+  font-size: 96px;
   font-weight: 600;
-  font-family: "arial";
-  margin-top: 16px;
+  font-family: "arial", "helvetica", "sans-serif";
+  margin-top: 8px;
   margin-bottom: 8px;
   }
 
@@ -95,28 +104,28 @@ img{
   color: #000000;
   font-size: 24px;
   font-weight: 600;
-  font-family: "arial";
+  font-family: "arial", "helvetica", "sans-serif";
   margin-top: 16px;
   margin-bottom: 8px;
   }
 
 .text1 {
   text-align: left;
-  color: #969696;
+  color: #161617;
   margin-top: 8px;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 600;
-  font-family: "arial";
+  font-family: "arial", "helvetica", "sans-serif";
 }
 
 .text2 {
   text-align: left;
   color: #ffffff;
   margin-top: 8px;
-  margin-bottom: 8px;
-  font-size: 24px;
+  margin-bottom: 0px;
+  font-size: 36px;
   font-weight: 400;
-  font-family: "arial";
+  font-family: "arial", "helvetica", "sans-serif";
 }
 
 .text3 {
@@ -126,34 +135,43 @@ img{
   margin-bottom: 8px;
   font-size: 24px;
   font-weight: 400;
-  font-family: "arial";
+  font-family: "arial", "helvetica", "sans-serif";
 }
 
 .boxText {
   text-align: left;
   margin-left: 8px;
+  color: #000000;
   font-size: 32px;
   font-weight: 600;
-  font-family: "arial";
+  font-family: "arial", "helvetica", "sans-serif";
 }
 
 .bio {
   text-align: left;
   font-size: 24px;
   font-weight: 600;
-  font-family: "arial";
-  color: #FFFFFF;
+  font-family: "arial", "helvetica", "sans-serif";
+  color: #1d1d1f;
+  
 }
 
 .bio1 {
   text-align: right;
   font-size: 18px;
   font-weight: 400;
-  font-family: "arial";
+  font-family: "arial", "helvetica", "sans-serif";
+}
+
+.box0 {
+  background: #000000;
+  padding: 12px;
+  border: 0;
+  border-radius: 50px;
 }
 
 .box1 {
-  background: #be5969;
+  background: #ffffff;
   margin-top: 16px;
   padding: 12px;
   border: 0;
@@ -161,39 +179,7 @@ img{
 }
 
 .box11 {
-  background: #f8d3cb;
-  margin-top: 12px;
-  padding: 12px;
-  border: 0;
-  border-radius: 20px;
-}
-
-.box2 {
-  background: #469c73;
-  margin-top: 16px;
-  padding: 12px;
-  border: 0;
-  border-radius: 30px;
-}
-
-.box21 {
-  background: #d2fde7;
-  margin-top: 12px;
-  padding: 12px;
-  border: 0;
-  border-radius: 20px;
-}
-
-.box3 {
-  background: #5987b5;
-  margin-top: 16px;
-  padding: 12px;
-  border: 0;
-  border-radius: 30px;
-}
-
-.box31 {
-  background: #d7f1ff;
+  background: #f5f5f7;
   margin-top: 12px;
   padding: 12px;
   border: 0;
@@ -218,13 +204,13 @@ img{
 
 .button {
   cursor: pointer;
-  background: #be5969;
+  background: #000000;
   margin-top: 16px;
   margin-bottom: 16px;
   padding: 12px;
   font-size: 48px;
   font-weight: 550;
-  font-family: "arial";
+  font-family: "arial", "helvetica", "sans-serif";
   border: 0;
   border-radius: 20px;
 }
@@ -234,7 +220,8 @@ img{
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
-  font-family: "arial";
+  font-family: "arial", "helvetica", "sans-serif";
+
   margin-top: 12px;
   margin-bottom: 12px;
 }
@@ -246,10 +233,12 @@ img{
 
 <BODY>
   <div class="main">
+    <div class="mainContainer">
+    <div class="box0">
       <div class = "mainContainer2">
         <div class="dataContainer2">
           <div class = "dataContainer">
-          <div class="header1">
+          <div class="header1">   
           Jiawen Wu
           </div>
           <div class="text2">
@@ -258,25 +247,26 @@ img{
           </div>
     
           <div class="dataContainer3">
-            <div class="copyRight">
             <a href = "https://real-jw.github.io" style="text-decoration: none;">
             <img src = "image002.png" alt = "Fingers Crossed" width="150" height="150" >
             </a>
             </div>
-            </div>
           </div>
-          
+        </div>    
       </div>
+    </div>
 
 
-  <div class="mainContainer">
+    <div class="mainContainer">
     <div class="dataContainer">
-
-
-
       <div class="text1">
-        Hi there!<br/>
-        I am currently looking for a Ph.D. position opening.
+        Hi there! This is Jiawen's homepage.<br/>
+        <br/>
+        My research interests fall into the fields of <font color="#6e6e73">VLSI Design</font> and <font color="#6e6e73">Computer Architecture</font>, 
+        especially <font color="#6e6e73">Hardware Accelerator</font>, <font color="#6e6e73">Hardware Security</font>, and their intersections.<br/>
+        <br/>
+        I am currently looking for a Ph.D. position opening 2023 fall.
+        <br/>
       </div>
 
       <div class="box1">
@@ -284,12 +274,23 @@ img{
           Research
         </div>
 
+        <a href = "http://sme.tju.edu.cn/en_home/en/" style="text-decoration: none;">
+          <div class="box11">
+            <div class="bio", style = "color: #1d1d1f;">
+              Sparse Neural Network Hardware Accelerator Design
+              </div>
+              <div class="bio1", style = "color: #6e6e73;">
+              School of Microelectronics, Tianjin University
+            </div>
+          </div>
+        </a>
+
         <a href = "http://www.ict.cas.cn/" style="text-decoration: none;">
           <div class="box11">
-            <div class="bio", style = "color: #be5969;"; font-weight= "200;">
+            <div class="bio", style = "color: #1d1d1f;"; font-weight= "200;">
               Post-Quantum Cryptography NTT Hardware Accelerator
             </div>
-            <div class="bio1", style = "color: #be5969;">
+            <div class="bio1", style = "color: #6e6e73;">
               State Key Laboratory of Computer Architecture, Institute of Computing Technology, Chinese Academy of Sciences
             </div>
           </div>
@@ -297,10 +298,10 @@ img{
 
         <a href = "https://www.cs.hku.hk/" style="text-decoration: none;">
           <div class="box11">
-            <div class="bio", style = "color: #be5969;">
+            <div class="bio", style = "color: #1d1d1f;">
               Automatic Management of Devices for Robotic Applications
             </div>
-            <div class="bio1", style = "color: #be5969;">
+            <div class="bio1", style = "color: #6e6e73;">
               Department of Computer Science, The University of Hong Kong
             </div>
           </div>
@@ -308,81 +309,77 @@ img{
 
         <a href = "http://sme.tju.edu.cn/en_home/en/" style="text-decoration: none;">
           <div class="box11">
-            <div class="bio", style = "color: #be5969;">
+            <div class="bio", style = "color: #1d1d1f;">
               The Analysis of Data Center Network Congestion Control Solution
               </div>
-              <div class="bio1", style = "color: #be5969;">
+              <div class="bio1", style = "color: #6e6e73;">
               School of Microelectronics, Tianjin University
             </div>
           </div>
         </a>
-
   </div>
 
-        <div class="box2">
+        <div class="box1">
           <div class="boxText">
             Projects
           </div>
           
           <a href = "GhostResNet.pdf" style="text-decoration: none;">
-            <div class="box21">
-              <div class="bio", style = "color: #469c73;">
+            <div class="box11">
+              <div class="bio" >
                 Image classificaton using a hybrid of ResNet 50 and GhostNet
               </div>
             </div>
           </a>
     
           <a href = "Temp.pdf" style="text-decoration: none;">
-            <div class="box21">
-              <div class="bio", style = "color: #469c73;">
+            <div class="box11">
+              <div class="bio" >
                 Measuring body temperature with face recognition
               </div>
             </div>
           </a>
     
           <a href = "FPGA.pdf" style="text-decoration: none;">
-            <div class="box21">
-              <div class="bio", style = "color: #469c73;">
+            <div class="box11">
+              <div class="bio" >
                 An Approach to License Plate Recognition System on FPGA
               </div>
           </div>
         </a>
 
           <a href = "https://github.com/Real-JW/ROS2-with-ResNet-in-Docker" style="text-decoration: none;">
-            <div class="box21">
-              <div class="bio", style = "color: #469c73;">
+            <div class="box11">
+              <div class="bio" >
                 A ResNet18 image classificaton with ROS2 in Docker
               </div>
             </div>
           </a>
 
           <a href = "https://github.com/Real-JW/2022_TJU_Python_Homework" style="text-decoration: none;">
-            <div class="box21">
-              <div class="bio", style = "color: #469c73;">
+            <div class="box11">
+              <div class="bio" >
                 The final homework for class Modern Programing Techniques
               </div>
             </div>
             </a>
-
-
-
         </div>
 
-      <div class="box3">
+      <div class="box1">
         <div class="boxText">
           Interests
         </div>
 
         <a href = "https://portal.real-jw.repl.co/" style="text-decoration: none;">
-        <div class="box31">
-          <div class="bio", style = "color: #5987b5;">
+        <div class="box11">
+          <div class="bio">
             A blockchain project on web using Ethereum Rinkeby test network
           </div>
         </div>
         </a>
         <a href = "https://opensea.io/Real-JW" style="text-decoration: none;">
-        <div class="box31">
-          <div class="bio", style = "color: #5987b5;">
+        <div class="box11">
+          <div class="bio">
             Minted my own NFTs on OpenSea
           </div>
         </div>
@@ -394,7 +391,7 @@ img{
           Contact
         </div>
         <div class="dataContainer">
-        <a href = "wujiawen@tju.edu.cn" style="text-decoration: none;">
+        <a href = "mailto:wujiawen@tju.edu.cn" style="text-decoration: none;">
           <div class="box41">
             <div class="bio", style = "color: #7e7e7e;">
               Email
@@ -423,8 +420,8 @@ img{
   </div>
   </div>
 
-  <div class = "mainContainer2">
-    <div class = "copyRight">&copy; Copyright 2022 RealJW &ensp; (<i>Last Update: Nov. 2022</i>)</div>
+  <div class = "mainContainer3">
+    <div class = "copyRight">&copy; Copyright 2023 RealJW &ensp; (<i>Last Update: Feb. 2023</i>)</div>
   </div>
 
 </div>
