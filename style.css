@@ -7,7 +7,7 @@ body, html {
     margin: 0;
     color: #131313;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 1.5;
     transition: background-color 0.5s ease, color 0.5s ease;
   }
@@ -112,8 +112,7 @@ body, html {
     text-align: left;
     color: #ffffff;
     font-size: 96px;
-    font-weight: 600;
-    /* font-family: "arial", "helvetica", "sans-serif"; */
+    font-weight: bold;
     margin: 8px;
     }
   @media screen and (max-width: 1000px) {
@@ -123,23 +122,12 @@ body, html {
   .header1 {font-size: 40px;}
   }
   
-  /* .header2 {
-    text-align: right;
-    color: #000000;
-    font-size: 24px;
-    font-weight: 600;
-    font-family: "arial", "helvetica", "sans-serif";
-    margin-top: 16px;
-    margin-bottom: 8px;
-    } */
-  
   .text1 {
     text-align: left;
     color: #161617;
     margin: 8px;
     font-size: 28px;
-    font-weight: 600;
-    font-family: "arial", "helvetica", "sans-serif";
+    font-weight: bold;
   }
   @media screen and (max-width: 1000px) {
   .text1 {font-size: 24px;}
@@ -155,7 +143,6 @@ body, html {
     margin: 8px;
     font-size: 36px;
     font-weight: 400;
-    /* font-family: "arial", "helvetica", "sans-serif"; */
   }
   @media screen and (max-width: 1000px) {
   .text2 {font-size: 24px;}
@@ -164,24 +151,13 @@ body, html {
   .text2 {font-size: 20px;}
   }
   
-  
-  .text3 {
-    text-align: left;
-    color: #000000;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    font-size: 24px;
-    font-weight: 400;
-    /* font-family: "arial", "helvetica", "sans-serif"; */
-  }
-  
+ 
   .boxText {
     text-align: left;
     margin: 8px;
     color: #000000;
     font-size: 32px;
-    font-weight: 600;
-    /* font-family: "arial", "helvetica", "sans-serif"; */
+    font-weight: bold;
   }
   @media screen and (max-width: 550px) {
   .boxText {font-size: 24px;}
@@ -190,8 +166,7 @@ body, html {
   .bio {
     text-align: left;
     font-size: 24px;
-    font-weight: 600;
-    /* font-family: "arial", "helvetica", "sans-serif"; */
+    font-weight: bold;
     color: #1d1d1f;
   }
   @media screen and (max-width: 550px) {
@@ -203,7 +178,6 @@ body, html {
     font-size: 18px;
     font-weight: 400;
     color: #565656;
-    /* font-family: "arial", "helvetica", "sans-serif"; */
   }
   @media screen and (max-width: 550px) {
   .bio1 {font-size: 16px;}
@@ -235,24 +209,8 @@ body, html {
     border: 0;
     border-radius: 20px;
   }
-  
-  .box4 {
-    background: #949494;
-    margin-top: 16px;
-    padding: 12px;
-    border: 0;
-    border-radius: 30px;
-  }
-  
-  .box41 {
-    background: #ffffff;
-    margin-top: 12px;
-    padding: 12px;
-    border: 0;
-    border-radius: 20px;
-  }
 
-/* ============================================ */
+  /* ============================================ */
   header {
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(10px);
@@ -264,12 +222,7 @@ body, html {
   right: 0;
   z-index: 3;
   }
-  
-  header img {
-    max-width: 100%;
-    height: auto;
-  }
-  
+
   nav ul {
     list-style: none;
     display: flex;
