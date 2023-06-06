@@ -212,8 +212,8 @@ body, html {
 
   /* ============================================ */
   header {
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(10px);
   padding: 3px;
   position: fixed;
@@ -226,7 +226,7 @@ body, html {
   nav ul {
     list-style: none;
     display: flex;
-    color: #ffffff;
+    color: #000000;
     justify-content: center;
     margin: 0;
     padding: 5px;
@@ -241,7 +241,7 @@ body, html {
   }
   
   nav a {
-    color: #FFFFFF;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -282,7 +282,7 @@ body, html {
   }
   
   button {
-    background-color: #242424;
+    background-color: #dedede;
     color: #ffffff;
     border: none;
     border-radius: 30px;
@@ -334,3 +334,21 @@ body, html {
     color: #ffffff;
   }
 
+  .dark-mode header {
+  background: rgba(0, 0, 0, 0.7);
+  }
+
+  .dark-mode nav ul {
+    color: #ffffff;
+  }
+  
+  .dark-mode nav a {
+    color: #ffffff;
+  }
+  .dark-mode nav a:hover {
+    color: #939393;
+  }
+
+  .dark-mode button {
+    background-color: #252525;
+  }
