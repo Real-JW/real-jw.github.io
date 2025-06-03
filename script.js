@@ -1,15 +1,35 @@
 const toggleButton = document.getElementById('dark-mode-toggle');
 const body = document.body;
 
-toggleButton.addEventListener('click', () => {
+
+function setActive(clickedButton) {
+  // Remove active class from all buttons except dark mode toggle
+  const buttons = document.querySelectorAll('nav button:not(#dark-mode-toggle)');
+  buttons.forEach(btn => btn.classList.remove('active'));
+  
+  // Add active class to clicked button
+  clickedButton.classList.add('active');
+}
+
+function setActive(btn) {
+  // Set active class for nav buttons
+  document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+}
+
+function toggleDarkMode() {
+  const body = document.body;
   body.classList.toggle('dark-mode');
   if (body.classList.contains('dark-mode')) {
     localStorage.setItem('dark-mode', 'enabled');
   } else {
     localStorage.setItem('dark-mode', 'disabled');
   }
-});
-
-if (localStorage.getItem('dark-mode') === 'enabled') {
-  body.classList.add('dark-mode');
 }
+
+// On page load, apply dark mode if enabled
+window.addEventListener('DOMContentLoaded', function() {
+  if (localStorage.getItem('dark-mode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+  }
+});

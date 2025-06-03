@@ -14,18 +14,18 @@
   <TITLE>About Me</TITLE>
 
   <BODY>
-    <header>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutMe.html">About Me</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <button id="dark-mode-toggle"><a>Dark</a></button>
-          </ul>
-        </nav>
-    </header>
+    <div class="nav-container">
+      <nav class="pill-nav">
+        <ul>
+          <li><button onclick="setActive(this); location.href='index.html'">Home</button></li>
+          <li><button onclick="setActive(this); location.href='aboutMe.html'">About Me</button></li>
+          <li><button class="active" onclick="setActive(this); location.href='research.html'">Research</button></li>
+          <li><button onclick="setActive(this); location.href='blog.html'">Blog</button></li>
+          <li><button onclick="setActive(this); location.href='contact.html'">Contact</button></li>
+          <li><button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark</button></li>
+        </ul>
+      </nav>
+    </div>
 
         <div class="main">
             <div class="mainContainer">
