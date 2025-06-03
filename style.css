@@ -105,10 +105,10 @@ img {
   margin: 8px;
 }
 @media screen and (max-width: 1000px) {
-.header1 {font-size: 48px;}
+.header1 {font-size: 64px;}
 }
 @media screen and (max-width: 550px) {
-.header1 {font-size: 40px;}
+.header1 {font-size: 48px;}
 }
 
 .text1 {
@@ -117,27 +117,28 @@ img {
   margin: 8px;
   font-size: 28px;
   font-weight: bold;
+  line-height: 1.25;
 }
 @media screen and (max-width: 1000px) {
 .text1 {font-size: 24px;}
 }
 @media screen and (max-width: 550px) {
-.text1 {font-size: 20px;}
+.text1 {font-size: 18px;}
 }
-
 
 .text2 {
   text-align: left;
-  color: #ffffff;
+  color: #dbdbdb;
   margin: 8px;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 400;
+  line-height: 1.25;
 }
 @media screen and (max-width: 1000px) {
 .text2 {font-size: 24px;}
 }
 @media screen and (max-width: 550px) {
-.text2 {font-size: 20px;}
+.text2 {font-size: 18px;}
 }
 
 
@@ -147,6 +148,7 @@ img {
   color: #000000;
   font-size: 32px;
   font-weight: bold;
+  line-height: 1.25;
 }
 @media screen and (max-width: 550px) {
 .boxText {font-size: 24px;}
@@ -157,6 +159,7 @@ img {
   font-size: 24px;
   font-weight: bold;
   color: #1d1d1f;
+  line-height: 1.25;
 }
 @media screen and (max-width: 550px) {
 .bio {font-size: 20px;}
@@ -312,7 +315,7 @@ nav li {
         
         nav button {
           font-size: 11px;
-          padding: 8px 12px;
+          padding: 10px 10px;
         }
         
         #dark-mode-toggle {
