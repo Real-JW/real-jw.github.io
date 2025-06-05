@@ -114,12 +114,12 @@ img {
   text-align: left;
   color: #161617;
   margin: 8px;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 600;
   line-height: 1.25;
 }
 @media screen and (max-width: 1000px) {
-.text1 {font-size: 24px;}
+.text1 {font-size: 22px;}
 }
 @media screen and (max-width: 550px) {
 .text1 {font-size: 20px;}
@@ -130,7 +130,7 @@ img {
   color: #dbdbdb;
   margin: 8px;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.25;
 }
 @media screen and (max-width: 1000px) {
@@ -194,12 +194,34 @@ img {
   border-radius: 30px;
 }
 
+.home{
+  background: #f5f5f7;
+  margin-top: 10px;
+  padding: 10px;
+  border: 0;
+  border-radius: 20px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.home:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08), 0 1.5px 6px rgba(0,0,0,0.08);
+  transform: translateY(0px) scale(1.01);
+  cursor: pointer;
+}
+
+
 .box11 {
   background: #f5f5f7;
   margin-top: 10px;
   padding: 10px;
   border: 0;
   border-radius: 20px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+/* Hover effect for .box11 */
+.box11:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08), 0 1.5px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
 }
 
 
@@ -358,12 +380,12 @@ nav li {
 footer {
   flex-shrink: 0;
   display: flex;
-  background-color: #000000;
+  background-color: #ffffff;
   background-size: 100%;
   color: #000000;
   justify-content: center;
   width: 100%;
-  margin-top: auto; /* Push footer to bottom if page is short */
+  margin-top: auto;
   text-align: center;
 }
 
@@ -452,7 +474,7 @@ background: rgba(0, 0, 0, 0.7);
 
 copyRight {
   text-align: center;
-  color: #b1b1b1;
+  color: #7d7d7d;
   font-size: 14px;
   font-weight: 500;
   /* font-family: "arial", "helvetica", "sans-serif"; */
