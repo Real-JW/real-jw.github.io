@@ -1,44 +1,52 @@
-const toggleButton = document.getElementById('dark-mode-toggle');
-const body = document.body;
-
-
-function setActive(clickedButton) {
-  // Remove active class from all buttons except dark mode toggle
-  const buttons = document.querySelectorAll('nav button:not(#dark-mode-toggle)');
-  buttons.forEach(btn => btn.classList.remove('active'));
-
-  // Add active class to clicked button
-  clickedButton.classList.add('active');
-}
-
-function setActive(btn) {
-  // Set active class for nav buttons
-  document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-}
-
 function toggleDarkMode() {
   const body = document.body;
   body.classList.toggle('dark-mode');
-  if (body.classList.contains('dark-mode')) {
-    localStorage.setItem('dark-mode', 'enabled');
-  } else {
-    localStorage.setItem('dark-mode', 'disabled');
+  localStorage.setItem('dark-mode', body.classList.contains('dark-mode') ? 'enabled' : 'disabled');
+}
+
+function loadComponent(id, url, callback) {
+  const container = document.getElementById(id);
+  if (container) {
+    fetch(url)
+      .then(response => response.text())
+      .then(html => {
+        container.innerHTML = html;
+        if (callback) callback();
+      });
   }
 }
 
-// On page load, apply dark mode if enabled and update footer
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', () => {
   if (localStorage.getItem('dark-mode') === 'enabled') {
     document.body.classList.add('dark-mode');
   }
-  const year = document.getElementById('copyright-year');
-  if (year) {
-    year.textContent = new Date().getFullYear();
-  }
-  const lastUpdate = document.getElementById('last-update');
-  if (lastUpdate) {
-    const date = new Date(document.lastModified);
-    lastUpdate.textContent = date.toLocaleString('default', { month: 'long', year: 'numeric' });
-  }
+
+  loadComponent('nav-container', 'includes/nav.html', () => {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('#nav-container nav button[data-link]').forEach(btn => {
+      const link = btn.getAttribute('data-link');
+      btn.addEventListener('click', () => { window.location.href = link; });
+      if (link === currentPage) {
+        btn.classList.add('active');
+      }
+    });
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    if (toggleButton) {
+      toggleButton.addEventListener('click', toggleDarkMode);
+    }
+  });
+
+  loadComponent('footer-container', 'includes/footer.html', () => {
+    const year = document.getElementById('copyright-year');
+    if (year) {
+      year.textContent = new Date().getFullYear();
+    }
+    const lastUpdate = document.getElementById('last-update');
+    if (lastUpdate) {
+      const date = new Date(document.lastModified);
+      lastUpdate.textContent = date.toLocaleString('default', { month: 'long', year: 'numeric' });
+    }
+  });
+
+  loadComponent('publications-container', 'includes/publications.html');
 });
