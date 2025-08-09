@@ -1,0 +1,61 @@
+{
+  "personal": {
+    "name": "Jiawen Wu",
+    "email": "realjw@tamu.edu",
+    "location": "Texas A&M University, College Station, TX, USA",
+    "title": "Ph.D. Student",
+    "department": "Department of Electrical and Computer Engineering",
+    "advisor": "Prof. Jeyavijayan (JV) Rajendran",
+    "startDate": "Fall 2023",
+    "expectedGraduation": "Jun 2028",
+    "researchInterests": [
+      "hardware security",
+      "computer architecture",
+      "zero-knowledge proofs",
+      "hardware accelerators"
+    ],
+    "profileImage": "ProfilePic.png",
+    "bannerImage": "Banna.jpg"
+  },
+  "education": [
+    {
+      "degree": "Ph.D. in Computer Engineering",
+      "institution": "Texas A&M University",
+      "location": "College Station, TX",
+      "period": "Aug 2023 – Jun 2028 (Expected)"
+    },
+    {
+      "degree": "B.S. in Electrical Engineering", 
+      "institution": "Tianjin University",
+      "location": "Tianjin, China",
+      "period": "Aug 2019 – Jun 2023"
+    }
+  ],
+  "socialMedia": [
+    {
+      "platform": "Email",
+      "url": "mailto:realjw@tamu.edu",
+      "icon": "email",
+      "display": "Email"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/jiawen-wu-6385a828a/",
+      "icon": "linkedin",
+      "display": "LinkedIn"
+    },
+    {
+      "platform": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=5mEkf_cAAAAJ&hl=en",
+      "icon": "scholar",
+      "display": "Google Scholar"
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/Real-JW",
+      "icon": "github",
+      "display": "GitHub"
+    }
+  ],
+  "lastUpdated": "2024-08-08"
+}
