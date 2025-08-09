@@ -1,6 +1,8 @@
+---
+---
 <!DOCTYPE html>
-<HTML lang="en">
-  <HEAD>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
     <link rel="shortcut icon" typr="image/x-ico" href="favicon.ico" media="screen" />
@@ -10,127 +12,76 @@
       }
     </style>
     <link rel="stylesheet" href="style.css">
-  </HEAD>
-  <TITLE>About Me</TITLE>
+    <title>Research</title>
+  </head>
+  <body>
+    {% include nav.html active="Research" %}
 
-  <BODY>
-    <div class="nav-container">
-      <nav class="pill-nav">
-        <ul>
-          <li><button onclick="setActive(this); location.href='index.html'">Home</button></li>
-          <li><button onclick="setActive(this); location.href='aboutMe.html'">About Me</button></li>
-          <li><button class="active" onclick="setActive(this); location.href='research.html'">Research</button></li>
-          <li><button onclick="setActive(this); location.href='blog.html'">Blog</button></li>
-          <li><button onclick="setActive(this); location.href='contact.html'">Contact</button></li>
-          <li><button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark</button></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="main">
+      <div class="mainContainer">
+        <div class="dataContainer">
+          {% include publications.html %}
 
-    
-                  
-        <div class="main">
-            <div class="mainContainer">
-                <div class="dataContainer">
-                      <div class="box1">
-                      <div class="boxText">
-                        Publications
-                      </div>
-                      <a href = "https://arxiv.org/abs/2402.14152" style="text-decoration: none;">
-                        <div class="box11">
-                          <div class="bio">
-                            ModSRAM: Algorithm-Hardware Co-Design for Large Number Modular Multiplication in SRAM
-                          </div>
-                          <div class="bio1">
-                            Ku, Jonathan, Junyao Zhang, Haoxuan Shan, Saichand Samudrala, Jiawen Wu, Qilin Zheng, Ziru Li, JV Rajendran, and Yiran Chen. "ModSRAM: Algorithm-Hardware Co-Design for Large Number Modular Multiplication in SRAM." ArXiv, (2024). Accessed June 6, 2024. /abs/2402.14152.
-                          </div>
-                        </div>
-                      </a>
-                    <a href = "https://ieeexplore.ieee.org/abstract/document/10137059/" style="text-decoration: none;">
-                      <div class="box11">
-                        <div class="bio">
-                          Energy-efficient NTT Design with One-bank SRAM and 2-D PE Array
-                        </div>
-                        <div class="bio1">
-                          Jianan Mu, Huajie Tan, Jiawen Wu, Haotian Lu, Chip-Hong Chang, Shuai Chen, Shengwen Liang, Jing Ye, Huawei Li, Xiaowei Li. 2023 Design, Automation & Test in Europe Conference & Exhibition (DATE)
-                        </div>
-                      </div>
-                    </a>
-                    <a href = "https://www.mdpi.com/2079-9292/12/8/1890" style="text-decoration: none;">
-                      <div class="box11">
-                        <div class="bio">
-                          PFDCT: An Enhanced Transport Layer Protocol for Precise Flow Control in Data Centers
-                        </div>
-                        <div class="bio1">
-                          Zhuo Li, Huiyan Wang, Xiangdong Yi, Xinyi Zhang, Jiawen Wu, Yubin Zhang, Peng Luo, Kaihua Liu. Electronics 12 (8), 1890
-                        </div>
-                      </div>
-                    </a>
+          <div class="box1">
+            <a href="research.html" style="text-decoration: none;">
+              <div class="boxText">
+                Research
+              </div>
+            </a>
+            <a href = "http://sme.tju.edu.cn/" style="text-decoration: none;">
+              <div class="box11">
+                <div class="bio">
+                  Sparse Neural Network Hardware Accelerator Design
+                </div>
+                <div class="bio1">
+                  School of Microelectronics, Tianjin University
+                </div>
+              </div>
+            </a>
+            <a href = "http://www.ict.cas.cn/" style="text-decoration: none;">
+              <div class="box11">
+                <div class="bio">
+                  Post-Quantum Cryptography NTT Hardware Accelerator
+                </div>
+                <div class="bio1">
+                  State Key Laboratory of Computer Architecture, Institute of Computing Technology, Chinese Academy of Sciences
+                </div>
+              </div>
+            </a>
+            <a href = "https://www.cs.hku.hk/" style="text-decoration: none;">
+              <div class="box11">
+                <div class="bio">
+                  Automatic Management of Devices for Robotic Applications
+                </div>
+                <div class="bio1">
+                  Department of Computer Science, The University of Hong Kong
+                </div>
+              </div>
+            </a>
+            <a href = "http://sme.tju.edu.cn/" style="text-decoration: none;">
+              <div class="box11">
+                <div class="bio">
+                  The Analysis of Data Center Network Congestion Control Solution
                   </div>
+                  <div class="bio1">
+                  School of Microelectronics, Tianjin University
+                </div>
+              </div>
+            </a>
+          </div>
 
-                  <div class="box1">
-                    <a href = "research.html" style="text-decoration: none;">
-                      <div class="boxText">
-                        Research
-                      </div>
-                    </a>
-                    <a href = "http://sme.tju.edu.cn/" style="text-decoration: none;">
-                      <div class="box11">
-                        <div class="bio">
-                          Sparse Neural Network Hardware Accelerator Design
-                        </div>
-                        <div class="bio1">
-                          School of Microelectronics, Tianjin University
-                        </div>
-                      </div>
-                    </a>
-                    <a href = "http://www.ict.cas.cn/" style="text-decoration: none;">
-                      <div class="box11">
-                        <div class="bio">
-                          Post-Quantum Cryptography NTT Hardware Accelerator
-                        </div>
-                        <div class="bio1">
-                          State Key Laboratory of Computer Architecture, Institute of Computing Technology, Chinese Academy of Sciences
-                        </div>
-                      </div>
-                    </a>
-                    <a href = "https://www.cs.hku.hk/" style="text-decoration: none;">
-                      <div class="box11">
-                        <div class="bio">
-                          Automatic Management of Devices for Robotic Applications
-                        </div>
-                        <div class="bio1">
-                          Department of Computer Science, The University of Hong Kong
-                        </div>
-                      </div>
-                    </a>
-                    <a href = "http://sme.tju.edu.cn/" style="text-decoration: none;">
-                      <div class="box11">
-                        <div class="bio">
-                          The Analysis of Data Center Network Congestion Control Solution
-                          </div>
-                          <div class="bio1">
-                          School of Microelectronics, Tianjin University
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-
-
-            
-                    <a href = "./index.html" style="text-decoration: none;">
-                                    <div class="home" style="background: #002fa7;">
+          <a href = "./index.html" style="text-decoration: none;">
+            <div class="home" style="background: #002fa7;">
               <div class="bio" style="color: #ffffff; text-align: center;">
                 Back to Home
               </div>
-                        </div>
-                    </a>
-                </div>
             </div>
-  <footer>
-    <copyRight>&copy; Copyright 2024 Jiawen &ensp; (<i>Last Update: Jun. 2024</i>)</copyRight>
-  </footer>
-</div>
-  <script src="script.js"></script>
-    </BODY>
-</HTML>
+          </a>
+        </div>
+      </div>
+
+      {% include footer.html %}
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

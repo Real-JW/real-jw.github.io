@@ -1,6 +1,8 @@
+---
+---
 <!DOCTYPE html>
-<HTML lang="en">
-  <HEAD>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
     <link rel="shortcut icon" typr="image/x-ico" href="favicon.ico" media="screen" />
@@ -10,119 +12,105 @@
       }
     </style>
     <link rel="stylesheet" href="style.css">
-  </HEAD>
-  <TITLE>About Me</TITLE>
+    <title>Blog</title>
+  </head>
+  <body>
+    {% include nav.html active="Blog" %}
 
-  <BODY>
-    <div class="nav-container">
-      <nav class="pill-nav">
-        <ul>
-          <li><button onclick="setActive(this); location.href='index.html'">Home</button></li>
-          <li><button onclick="setActive(this); location.href='aboutMe.html'">About Me</button></li>
-          <li><button onclick="setActive(this); location.href='research.html'">Research</button></li>
-          <li><button class="active" onclick="setActive(this); location.href='blog.html'">Blog</button></li>
-          <li><button onclick="setActive(this); location.href='contact.html'">Contact</button></li>
-          <li><button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark</button></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="main">
+      <div class="mainContainer">
+        <div class="dataContainer">
+          <div class="box1">
+            <a href = "blog.html" style="text-decoration: none;">
+            <div class="boxText">
+              Blog
+            </div>
+          </a>
 
-        <div class="main">
-            <div class="mainContainer">
-                <div class="dataContainer">
-                  <div class="box1">
-                    <a href = "blog.html" style="text-decoration: none;">
-                    <div class="boxText">
-                      Blog
-                    </div>
-                  </a>
-                    
-                  <a href = "" style="text-decoration: none;">
-                    <div class="box11">
-                      <div class="bio" >
-                        Our paper got accepted by IEEE IISWC 2024!
-                      </div>
-                    </div>
-                  </a>
+          <a href = "" style="text-decoration: none;">
+            <div class="box11">
+              <div class="bio" >
+                Our paper got accepted by IEEE IISWC 2024!
+              </div>
+            </div>
+          </a>
 
-                  <a href = "https://arxiv.org/abs/2402.14152" style="text-decoration: none;">
-                    <div class="box11">
-                      <div class="bio" >
-                        Our paper ModSRAM got accepted by IEEE/ACM DAC 2024!
-                      </div>
-                    </div>
-                  </a>
+          <a href = "https://arxiv.org/abs/2402.14152" style="text-decoration: none;">
+            <div class="box11">
+              <div class="bio" >
+                Our paper ModSRAM got accepted by IEEE/ACM DAC 2024!
+              </div>
+            </div>
+          </a>
 
-                    <a href = "GhostResNet.pdf" style="text-decoration: none;">
-                      <div class="box11">
-                        <div class="bio" >
-                          Image classificaton using a hybrid of ResNet 50 and GhostNet.
-                        </div>
-                      </div>
-                    </a>
-              
-                    <a href = "Temp.pdf" style="text-decoration: none;">
-                      <div class="box11">
-                        <div class="bio" >
-                          Measuring body temperature with face recognition.
-                        </div>
-                      </div>
-                    </a>
-              
-                    <a href = "FPGA.pdf" style="text-decoration: none;">
-                      <div class="box11">
-                        <div class="bio" >
-                          An approach to license plate recognition system on FPGA.
-                        </div>
-                    </div>
-                  </a>
-            
-                    <a href = "https://github.com/Real-JW/ROS2-with-ResNet-in-Docker" style="text-decoration: none;">
-                      <div class="box11">
-                        <div class="bio" >
-                          A ResNet18 image classificaton with ROS2 in Docker.
-                        </div>
-                      </div>
-                    </a>
-            
-                    <a href = "https://github.com/Real-JW/2022_TJU_Python_Homework" style="text-decoration: none;">
-                      <div class="box11">
-                        <div class="bio" >
-                          The final homework for class Modern Programing Techniques.
-                        </div>
-                      </div>
-                      </a>
-             
-                    <a href = "https://portal.real-jw.repl.co/" style="text-decoration: none;">
-                      <div class="box11">
-                        <div class="bio">
-                          A blockchain project on web using Ethereum Rinkeby test network.
-                        </div>
-                      </div>
-                    </a>
-                    <a href = "https://opensea.io/Real-JW" style="text-decoration: none;">
-                      <div class="box11">
-                        <div class="bio">
-                          Minted my own NFTs on OpenSea.
-                        </div>
-                      </div>
-                    </a>
-                  </div>
+            <a href = "GhostResNet.pdf" style="text-decoration: none;">
+              <div class="box11">
+                <div class="bio" >
+                  Image classificaton using a hybrid of ResNet 50 and GhostNet.
+                </div>
+              </div>
+            </a>
 
-                  <a href = "./index.html" style="text-decoration: none;">
+            <a href = "Temp.pdf" style="text-decoration: none;">
+              <div class="box11">
+                <div class="bio" >
+                  Measuring body temperature with face recognition.
+                </div>
+              </div>
+            </a>
+
+            <a href = "FPGA.pdf" style="text-decoration: none;">
+              <div class="box11">
+                <div class="bio" >
+                  An approach to license plate recognition system on FPGA.
+                </div>
+              </div>
+            </a>
+
+            <a href = "https://github.com/Real-JW/ROS2-with-ResNet-in-Docker" style="text-decoration: none;">
+              <div class="box11">
+                <div class="bio" >
+                  A ResNet18 image classificaton with ROS2 in Docker.
+                </div>
+              </div>
+            </a>
+
+            <a href = "https://github.com/Real-JW/2022_TJU_Python_Homework" style="text-decoration: none;">
+              <div class="box11">
+                <div class="bio" >
+                  The final homework for class Modern Programing Techniques.
+                </div>
+              </div>
+              </a>
+
+            <a href = "https://portal.real-jw.repl.co/" style="text-decoration: none;">
+              <div class="box11">
+                <div class="bio">
+                  A blockchain project on web using Ethereum Rinkeby test network.
+                </div>
+              </div>
+            </a>
+            <a href = "https://opensea.io/Real-JW" style="text-decoration: none;">
+              <div class="box11">
+                <div class="bio">
+                  Minted my own NFTs on OpenSea.
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <a href = "./index.html" style="text-decoration: none;">
             <div class="home" style="background: #002fa7;">
               <div class="bio" style="color: #ffffff; text-align: center;">
                 Back to Home
               </div>
-                </a>
                 </div>
-            </div>
+          </a>
         </div>
+      </div>
 
-  <footer>
-    <copyRight>&copy; Copyright 2024 Jiawen &ensp; (<i>Last Update: July 2024</i>)</copyRight>
-  </footer>
-</div>
-  <script src="script.js"></script>
-    </BODY>
-</HTML>
+      {% include footer.html %}
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

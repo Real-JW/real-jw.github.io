@@ -1,0 +1,12 @@
+<div class="nav-container">
+  <nav class="pill-nav">
+    <ul>
+      <li><button {% if include.active == "Home" %}class="active"{% endif %} onclick="setActive(this); location.href='index.html'">Home</button></li>
+      <li><button {% if include.active == "About Me" %}class="active"{% endif %} onclick="setActive(this); location.href='aboutMe.html'">About Me</button></li>
+      <li><button {% if include.active == "Research" %}class="active"{% endif %} onclick="setActive(this); location.href='research.html'">Research</button></li>
+      <li><button {% if include.active == "Blog" %}class="active"{% endif %} onclick="setActive(this); location.href='blog.html'">Blog</button></li>
+      <li><button {% if include.active == "Contact" %}class="active"{% endif %} onclick="setActive(this); location.href='contact.html'">Contact</button></li>
+      <li><button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark</button></li>
+    </ul>
+  </nav>
+</div>

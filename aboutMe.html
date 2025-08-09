@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,18 +15,7 @@
     <title>About Me</title>
   </head>
   <body>
-    <div class="nav-container">
-      <nav class="pill-nav">
-        <ul>
-          <li><button onclick="setActive(this); location.href='index.html'">Home</button></li>
-          <li><button class="active" onclick="setActive(this); location.href='aboutMe.html'">About Me</button></li>
-          <li><button onclick="setActive(this); location.href='research.html'">Research</button></li>
-          <li><button onclick="setActive(this); location.href='blog.html'">Blog</button></li>
-          <li><button onclick="setActive(this); location.href='contact.html'">Contact</button></li>
-          <li><button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark</button></li>
-        </ul>
-      </nav>
-    </div>
+    {% include nav.html active="About Me" %}
 
     <div class="main">
       <div class="mainContainer">
@@ -56,7 +47,7 @@
             </div>
           </div>
 
-                    <div class="box1">
+          <div class="box1">
             <a href="aboutMe.html" style="text-decoration: none;">
               <div class="boxText">
                 About Me
@@ -76,7 +67,7 @@
               </div>
             </a>
           </div>
-          
+
           <a href="./index.html" style="text-decoration: none;">
             <div class="home" style="background: #002fa7;">
               <div class="bio" style="color: #ffffff; text-align: center;">
@@ -87,9 +78,7 @@
         </div>
       </div>
 
-      <footer>
-        <copyRight>&copy; Copyright 2024 Jiawen &ensp; (<i>Last Update: Feb. 2024</i>)</copyRight>
-      </footer>
+      {% include footer.html %}
     </div>
     <script src="script.js"></script>
   </body>
