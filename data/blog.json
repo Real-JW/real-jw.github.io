@@ -17,21 +17,21 @@
     {
       "title": "Image classification using a hybrid of ResNet 50 and GhostNet",
       "date": "2023-12-01",
-      "url": "GhostResNet.pdf",
+      "url": "assets/documents/GhostResNet.pdf",
       "excerpt": "Research project on hybrid neural network architectures.",
       "type": "project"
     },
     {
       "title": "Measuring body temperature with face recognition",
       "date": "2023-11-01",
-      "url": "Temp.pdf",
+      "url": "assets/documents/Temp.pdf",
       "excerpt": "Computer vision project for temperature measurement.",
       "type": "project"
     },
     {
       "title": "An approach to license plate recognition system on FPGA",
       "date": "2023-10-01",
-      "url": "FPGA.pdf", 
+      "url": "assets/documents/FPGA.pdf", 
       "excerpt": "Hardware implementation of license plate recognition.",
       "type": "project"
     },

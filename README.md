@@ -1,15 +1,55 @@
 # Modular Website Structure
 
-This website has been refactored to use a modular architecture that separates content from presentation and makes updates easier.
+This website has been refactored to use a modular architecture with organized file structure that separates content from presentation and makes updates easier.
 
-## Structure
+## File Structure
+
+```
+├── assets/
+│   ├── css/
+│   │   └── style.css           # Main stylesheet
+│   ├── js/
+│   │   └── script.js           # Main JavaScript
+│   ├── images/
+│   │   ├── Banna.jpg           # Banner image
+│   │   ├── ProfilePic.png      # Profile picture
+│   │   ├── profile.png         # Additional profile image
+│   │   └── image002.png        # Other images
+│   └── documents/
+│       ├── DataCenter.pdf      # Research documents
+│       ├── FPGA.pdf           
+│       ├── GhostResNet.pdf    
+│       └── Temp.pdf           
+├── data/
+│   ├── profile.json            # Personal information
+│   ├── publications.json       # Research publications
+│   └── blog.json              # Blog posts and projects
+├── includes/
+│   ├── nav.html               # Navigation menu
+│   ├── footer.html            # Footer component
+│   ├── profile-header.html    # Profile display
+│   ├── about-summary.html     # About section
+│   ├── education.html         # Education history
+│   ├── social-links.html      # Social media links
+│   ├── publications.html      # Publications container
+│   └── blog-posts.html        # Blog posts container
+├── pages/
+│   ├── index.html             # Home page
+│   ├── aboutMe.html           # About page
+│   ├── contact.html           # Contact page
+│   ├── research.html          # Research page
+│   └── blog.html              # Blog page
+└── favicon.ico                # Site icon
+```
 
 ### Data Files (`data/`)
+
 - `profile.json` - Personal information, education, and contact details
 - `publications.json` - Research publications list
 - `blog.json` - Blog posts and project updates
 
 ### Modular Components (`includes/`)
+
 - `nav.html` - Navigation menu
 - `footer.html` - Footer with copyright and last update
 - `profile-header.html` - Profile information display
@@ -20,11 +60,19 @@ This website has been refactored to use a modular architecture that separates co
 - `blog-posts.html` - Blog posts container
 
 ### Pages
+
 - `index.html` - Home page (uses profile-header, about-summary, publications, social-links)
 - `aboutMe.html` - About page (uses education component)
 - `contact.html` - Contact page (uses social-links)
 - `research.html` - Research page (uses publications)
 - `blog.html` - Blog page (uses blog-posts)
+
+### Assets (`assets/`)
+
+- `css/style.css` - Main stylesheet
+- `js/script.js` - JavaScript functionality
+- `images/` - All image files organized by type
+- `documents/` - PDF documents and research papers
 
 ### JavaScript (`script.js`)
 - Loads all data files
