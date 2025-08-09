@@ -1,0 +1,67 @@
+{
+  "blogPosts": [
+    {
+      "title": "Our paper got accepted by IEEE IISWC 2024!",
+      "date": "2024-08-01",
+      "url": "",
+      "excerpt": "Our research on Performance Analysis of Zero-Knowledge Proofs has been accepted.",
+      "type": "news"
+    },
+    {
+      "title": "Our paper ModSRAM got accepted by IEEE/ACM DAC 2024!",
+      "date": "2024-03-01", 
+      "url": "https://arxiv.org/abs/2402.14152",
+      "excerpt": "Algorithm-Hardware Co-Design for Large Number Modular Multiplication in SRAM.",
+      "type": "news"
+    },
+    {
+      "title": "Image classification using a hybrid of ResNet 50 and GhostNet",
+      "date": "2023-12-01",
+      "url": "assets/documents/GhostResNet.pdf",
+      "excerpt": "Research project on hybrid neural network architectures.",
+      "type": "project"
+    },
+    {
+      "title": "Measuring body temperature with face recognition",
+      "date": "2023-11-01",
+      "url": "assets/documents/Temp.pdf",
+      "excerpt": "Computer vision project for temperature measurement.",
+      "type": "project"
+    },
+    {
+      "title": "An approach to license plate recognition system on FPGA",
+      "date": "2023-10-01",
+      "url": "assets/documents/FPGA.pdf", 
+      "excerpt": "Hardware implementation of license plate recognition.",
+      "type": "project"
+    },
+    {
+      "title": "A ResNet18 image classification with ROS2 in Docker",
+      "date": "2023-09-01",
+      "url": "https://github.com/Real-JW/ROS2-with-ResNet-in-Docker",
+      "excerpt": "Integration of deep learning with robotics middleware.",
+      "type": "project"
+    },
+    {
+      "title": "The final homework for class Modern Programming Techniques",
+      "date": "2022-12-01",
+      "url": "https://github.com/Real-JW/2022_TJU_Python_Homework",
+      "excerpt": "Python programming coursework and projects.",
+      "type": "project"
+    },
+    {
+      "title": "A blockchain project on web using Ethereum Rinkeby test network",
+      "date": "2022-06-01",
+      "url": "https://portal.real-jw.repl.co/",
+      "excerpt": "Web-based blockchain application development.",
+      "type": "project"
+    },
+    {
+      "title": "Minted my own NFTs on OpenSea",
+      "date": "2022-05-01",
+      "url": "https://opensea.io/Real-JW",
+      "excerpt": "Digital art and NFT creation experience.",
+      "type": "project"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "publications": [
+    {
+      "title": "Performance Analysis of Zero-Knowledge Proofs",
+      "authors": "Saichand Samudrala, Jiawen Wu, Chen Chen, Haoxuan Shan, Jonathan Ku, Yiran Chen, Jeyavijayan Rajendran",
+      "venue": "IEEE International Symposium on Workload Characterization (IISWC), 2024",
+      "url": "https://arxiv.org/abs/2402.14152",
+      "type": "conference"
+    },
+    {
+      "title": "ModSRAM: Algorithm-Hardware Co-Design for Large Number Modular Multiplication in SRAM",
+      "authors": "Jonathan Ku, Junyao Zhang, Haoxuan Shan, Saichand Samudrala, Jiawen Wu, Qilin Zheng, Ziru Li, Jeyavijayan Rajendran, and Yiran Chen",
+      "venue": "Proceedings of the 61st ACM/IEEE Design Automation Conference (DAC), 2024",
+      "url": "https://arxiv.org/abs/2402.14152",
+      "type": "conference"
+    },
+    {
+      "title": "Energy-efficient NTT Design with One-bank SRAM and 2-D PE Array",
+      "authors": "Jianan Mu, Huajie Tan, Jiawen Wu, Haotian Lu, Chip-Hong Chang, Shuai Chen, Shengwen Liang, Jing Ye, Huawei Li, Xiaowei Li",
+      "venue": "Design, Automation & Test in Europe Conference & Exhibition (DATE), 2023",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10137059/",
+      "type": "conference"
+    },
+    {
+      "title": "PFDCT: An Enhanced Transport Layer Protocol for Precise Flow Control in Data Centers",
+      "authors": "Zhuo Li, Huiyan Wang, Xiangdong Yi, Xinyi Zhang, Jiawen Wu, Yubin Zhang, Peng Luo, Kaihua Liu",
+      "venue": "Electronics 12 (8), 2023",
+      "url": "https://www.mdpi.com/2079-9292/12/8/1890",
+      "type": "journal"
+    }
+  ]
+}
