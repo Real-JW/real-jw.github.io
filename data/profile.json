@@ -1,8 +1,9 @@
 {
   "personal": {
     "name": "Jiawen Wu",
-    "email": "realjw@tamu.edu",
-    "location": "Texas A&M University, College Station, TX, USA",
+  "email": "realjw@tamu.edu",
+  "university": "Texas A&M University",
+  "location": "WEB 102, College Station, TX, USA",
     "title": "Ph.D. Student",
     "department": "Department of Electrical and Computer Engineering",
     "advisor": "Prof. Jeyavijayan (JV) Rajendran",

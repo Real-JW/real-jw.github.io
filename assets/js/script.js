@@ -71,7 +71,12 @@ function updateProfileElements() {
   
   const contactElement = document.getElementById('profile-contact');
   if (contactElement) {
-    contactElement.innerHTML = `${profileData.personal.email}<br>${profileData.personal.location}`;
+    const locationParts = profileData.personal.location.split(',');
+    const locationHtml = locationParts.length > 1
+      ? `${locationParts[0].trim()}<br>${locationParts.slice(1).join(',').trim()}`
+      : profileData.personal.location;
+
+    contactElement.innerHTML = `${profileData.personal.email}<br><span class="university-name">${profileData.personal.university}</span><br>${locationHtml}`;
   }
   
   const profileImage = document.getElementById('profile-image');
@@ -87,8 +92,8 @@ function updateProfileElements() {
       .join(', ');
     
     aboutText.innerHTML = `
-      Hi there! Welcome to ${profileData.personal.name.split(' ')[0]}'s homepage.<br><br>
-      I am a ${profileData.personal.title} in the ${profileData.personal.department} at Texas A&M University, advised by ${profileData.personal.advisor}. I began my doctoral studies in ${profileData.personal.startDate}.<br><br>
+  Hi there! Welcome to ${profileData.personal.name.split(' ')[0]}'s homepage.<br><br>
+  I am a ${profileData.personal.title} in the ${profileData.personal.department} at <span class="university-name">${profileData.personal.university}</span>, advised by ${profileData.personal.advisor}. I began my doctoral studies in ${profileData.personal.startDate}.<br><br>
       My research interests are focused on ${interests},
       and their intersections.<br><br>
       I serve as a reviewer for ${profileData.personal.reviewer}.<br>
