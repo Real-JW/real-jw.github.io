@@ -1,21 +1,21 @@
 {
   "blogPosts": [
     {
-      "title": "I start serving as a reviewer for IEEE PES Transactions on Smart Grid!",
+      "title": "I start serving as a reviewer for IEEE PES Transactions on Smart Grid! I am excited to contribute to the peer review process and help advance research in this important field.",
       "date": "2025-08-15",
       "url": "assets/documents/Performance_Analysis_of_Zero-Knowledge_Proofs.pdf",
       "excerpt": "I am excited to contribute to the peer review process and help advance research in this important field.",
       "type": "news"
     },
     {
-      "title": "Our paper got accepted by IEEE IISWC 2024!",
+      "title": "Our paper on Performance Analysis of Zero-Knowledge Proofs got accepted by IEEE IISWC 2024!",
       "date": "2024-08-01",
       "url": "",
       "excerpt": "Our research on Performance Analysis of Zero-Knowledge Proofs has been accepted.",
       "type": "news"
     },
     {
-      "title": "Our paper ModSRAM got accepted by IEEE/ACM DAC 2024!",
+      "title": "Our paper ModSRAM: Algorithm-Hardware Co-Design for Large Number Modular Multiplication in SRAM got accepted by IEEE/ACM DAC 2024!",
       "date": "2024-03-01", 
       "url": "https://arxiv.org/abs/2402.14152",
       "excerpt": "Algorithm-Hardware Co-Design for Large Number Modular Multiplication in SRAM.",
