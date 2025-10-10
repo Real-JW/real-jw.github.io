@@ -88,7 +88,7 @@ function updateProfileElements() {
     
     aboutText.innerHTML = `
   Hi there! Welcome to ${profileData.personal.name.split(' ')[0]}'s homepage.<br><br>
-  I am a ${profileData.personal.title} in the ${profileData.personal.department} at <span class="university-name">${profileData.personal.university}</span>, advised by ${profileData.personal.advisor}. I began my doctoral studies in ${profileData.personal.startDate}.<br><br>
+  I am a ${profileData.personal.title} in the ${profileData.personal.department} at <span class="highlight-text">${profileData.personal.university}</span>, advised by ${profileData.personal.advisor}. I began my doctoral studies in ${profileData.personal.startDate}.<br><br>
       My research interests are focused on ${interests},
       and their intersections.<br><br>
       I serve as a reviewer for ${profileData.personal.reviewer}.<br>
