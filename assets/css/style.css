@@ -388,11 +388,13 @@ footer {
   display: flex;
   background-color: #ffffff;
   background-size: 100%;
-  color: #000000;
   justify-content: center;
   width: 100%;
   margin-top: auto;
   text-align: center;
+  font-size: 10px;
+  font-weight: 300;
+  color: #7d7d7d;
 }
 
 button {
@@ -455,7 +457,7 @@ button {
 
 .dark-mode footer {
   background: #000000;
-  color: #ffffff;
+  color: #9d9d9d;
 }
 
 .dark-mode header {
