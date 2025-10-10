@@ -5,8 +5,14 @@ let blogData = null;
 
 function toggleDarkMode() {
   const body = document.body;
-  body.classList.toggle('dark-mode');
-  localStorage.setItem('dark-mode', body.classList.contains('dark-mode') ? 'enabled' : 'disabled');
+  const html = document.documentElement;
+  const isDark = body.classList.toggle('dark-mode');
+  if (isDark) {
+    html.classList.add('dark-mode');
+  } else {
+    html.classList.remove('dark-mode');
+  }
+  localStorage.setItem('dark-mode', isDark ? 'enabled' : 'disabled');
 }
 
 function loadComponent(id, url, callback) {
@@ -149,6 +155,7 @@ function updateBlogPosts() {
 window.addEventListener('DOMContentLoaded', () => {
   if (localStorage.getItem('dark-mode') === 'enabled') {
     document.body.classList.add('dark-mode');
+    document.documentElement.classList.add('dark-mode');
   }
 
   // Load all data first, then load components

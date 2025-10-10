@@ -406,19 +406,15 @@ button {
   cursor: pointer;
   transition: background-color 0.1s ease;
 }
+html.dark-mode,
+body.dark-mode {
+  background-color: #000000;
+  color: #f0f0f0;
+}
+
 .dark-mode button {
   background-color: #252525;
   color: #ffffff;
-}
-
-.dark-mode {
-  background-color: #131313;
-  color: #f0f0f0;
-}
-
-.dark-mode body, .dark-mode html {
-  background-color: #131313;
-  color: #f0f0f0;
 }
 
 .dark-mode .main {
