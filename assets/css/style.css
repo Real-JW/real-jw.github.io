@@ -140,6 +140,10 @@ img {
 .text2 {font-size: 18px;}
 }
 
+.university-name {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+}
 
 .boxText {
   text-align: left;
@@ -487,23 +491,16 @@ background: rgba(0, 0, 0, 0.7);
   background: #500000;
 }
 
-.dark-mode .home {
-  background: #ffffff;
-}
-
 .home .bio {
   color: #ffffff;
 }
 
-.dark-mode .home .bio {
-  color: #000000;
-}
 
 .copyRight {
   text-align: center;
   color: #7d7d7d;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 10px;
+  font-weight: 300;
   /* font-family: "arial", "helvetica", "sans-serif"; */
   margin-top: 12px;
   margin-bottom: 12px;
