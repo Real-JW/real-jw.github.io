@@ -141,7 +141,7 @@ img {
 }
 
 .university-name {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Crimson Text', serif, 'Times New Roman';
   font-style: italic;
 }
 
@@ -392,7 +392,7 @@ footer {
   width: 100%;
   margin-top: auto;
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 300;
   color: #7d7d7d;
 }
@@ -501,7 +501,7 @@ background: rgba(0, 0, 0, 0.7);
 .copyRight {
   text-align: center;
   color: #7d7d7d;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 300;
   /* font-family: "arial", "helvetica", "sans-serif"; */
   margin-top: 12px;

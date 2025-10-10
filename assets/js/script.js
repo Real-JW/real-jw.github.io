@@ -71,12 +71,7 @@ function updateProfileElements() {
   
   const contactElement = document.getElementById('profile-contact');
   if (contactElement) {
-    const locationParts = profileData.personal.location.split(',');
-    const locationHtml = locationParts.length > 1
-      ? `${locationParts[0].trim()}<br>${locationParts.slice(1).join(',').trim()}`
-      : profileData.personal.location;
-
-    contactElement.innerHTML = `${profileData.personal.email}<br><span class="university-name">${profileData.personal.university}</span><br>${locationHtml}`;
+    contactElement.innerHTML = `${profileData.personal.email}<br><span class="university-name">${profileData.personal.university}</span><br>${profileData.personal.location}`;
   }
   
   const profileImage = document.getElementById('profile-image');
@@ -106,10 +101,10 @@ function updateProfileElements() {
     educationList.innerHTML = profileData.education.map(edu => `
       <div class="box11">
         <div class="bio">
-          ${edu.degree}
+          ${edu.degree}, <span class="university-name">${edu.institution}</span>
         </div>
         <div class="bio1">
-          ${edu.institution}, ${edu.location}<br>
+          ${edu.location}<br>
           ${edu.period}
         </div>
       </div>
