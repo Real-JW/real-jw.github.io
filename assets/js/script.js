@@ -83,7 +83,7 @@ function updateProfileElements() {
   const aboutText = document.getElementById('about-text');
   if (aboutText) {
     const interests = profileData.personal.researchInterests
-      .map(interest => `<span style="color:#3e75ff;">${interest}</span>`)
+      .map(interest => `<span class="highlight-text">${interest}</span>`)
       .join(', ');
     
     aboutText.innerHTML = `
