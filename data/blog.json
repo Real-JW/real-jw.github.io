@@ -1,16 +1,38 @@
 {
   "blogPosts": [
     {
+      "title": "Our paper on XMSS Hardware Acceleration on Low-Cost FPGA is accepted by GOMACTECH 2026!",
+      "date": "2026-03-11",
+      "url": "",
+      "excerpt": "Our work on XMSS hardware acceleration on low-cost FPGA has been accepted at GOMACTECH 2026.",
+      "type": "news"
+    },
+
+    {
+      "title": "I present my work on ChipZK at SRC TECHCON 2025 in Austin, TX!",
+      "date": "2025-09-08",
+      "url": "",
+      "excerpt": "Presented ChipZK at SRC TECHCON 2025 in Austin, TX.",
+      "type": "news"
+    },
+    {
       "title": "I start serving as a reviewer for IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD) and IEEE PES Transactions on Smart Grid (TSG)! I am excited to contribute to the peer review process and help advance research in this important field.",
       "date": "2025-08-15",
-      "url": "assets/documents/Performance_Analysis_of_Zero-Knowledge_Proofs.pdf",
+      "url": "",
       "excerpt": "I am excited to contribute to the peer review process and help advance research in this important field.",
+      "type": "news"
+    },
+    {
+      "title": "I am selected as a DAC Young Fellow 2025 and attend the conference in San Francisco, CA!",
+      "date": "2025-06-22",
+      "url": "",
+      "excerpt": "Honored to be selected as a DAC Young Fellow 2025 and attend the Design Automation Conference in San Francisco.",
       "type": "news"
     },
     {
       "title": "Our paper on Performance Analysis of Zero-Knowledge Proofs got accepted by IEEE IISWC 2024!",
       "date": "2024-08-01",
-      "url": "",
+      "url": "assets/documents/Performance_Analysis_of_Zero-Knowledge_Proofs.pdf",
       "excerpt": "Our research on Performance Analysis of Zero-Knowledge Proofs has been accepted.",
       "type": "news"
     },

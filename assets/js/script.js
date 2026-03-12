@@ -128,7 +128,7 @@ function updatePublications() {
             ${pub.title}
           </div>
           <div class="bio1">
-            ${pub.authors}<br>
+            ${pub.authors.replace('Jiawen Wu', '<strong>Jiawen Wu</strong>')}<br>
             <i>${pub.venue}</i>
           </div>
         </div>
@@ -140,15 +140,19 @@ function updatePublications() {
 function updateBlogPosts() {
   const blogPostsList = document.getElementById('blog-posts-list');
   if (blogPostsList && blogData) {
-    blogPostsList.innerHTML = blogData.blogPosts.map(post => `
+    blogPostsList.innerHTML = blogData.blogPosts.map(post => {
+      const dateStr = post.date ? new Date(post.date).toLocaleString('default', { month: 'long', year: 'numeric' }) : '';
+      return `
       <a href="${post.url}" style="text-decoration: none;">
         <div class="box11">
           <div class="bio">
             ${post.title}
           </div>
+          ${dateStr ? `<div class="post-date">${dateStr}</div>` : ''}
         </div>
       </a>
-    `).join('');
+    `;
+    }).join('');
   }
 }
 

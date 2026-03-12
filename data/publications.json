@@ -1,5 +1,20 @@
 {
   "publications": [
+        {
+      "title": "Hardware Acceleration of XMSS for CNSA 2.0 Migration on Low-Cost FPGAs",
+      "authors": "Joshua Ennis, Jiawen Wu, Jeyavijayan Rajendran",
+      "venue": "Government Microcircuit Applications & Critical Technology Conference (GOMACTECH), 2026",
+      "url": "",
+      "type": "conference"
+    },
+    {
+      "title": "ChipZK: A Trusted Computing Infrastructure for Chiplets Using Zero-Knowledge Proofs",
+      "authors": "Jiawen Wu, Jeyavijayan Rajendran",
+      "venue": "SRC TECHCON, 2025",
+      "url": "",
+      "type": "conference"
+    },
+
     {
       "title": "Performance Analysis of Zero-Knowledge Proofs",
       "authors": "Saichand Samudrala, Jiawen Wu, Chen Chen, Haoxuan Shan, Jonathan Ku, Yiran Chen, Jeyavijayan Rajendran",
