@@ -1,5 +1,12 @@
 {
   "publications": [
+    {
+      "title": "EDATracer: An Agentic Framework for Large-Scale EDA Artifact Analysis",
+      "authors": "Phat Tieu, Sayanti Jana, Matthew DeLorenzo, Jiawen Wu, Narendran Srinivasan, Srinivas Shakkottai, Jiang Hu, Jeyavijayan Rajendran",
+      "venue": "arXiv preprint arXiv:2608.04032, 2026",
+      "url": "https://arxiv.org/abs/2608.04032",
+      "type": "preprint"
+    },
         {
       "title": "Hardware Acceleration of XMSS for CNSA 2.0 Migration on Low-Cost FPGAs",
       "authors": "Joshua Ennis, Jiawen Wu, Jeyavijayan Rajendran",
