@@ -1,0 +1,6 @@
+# Public pages and assets are available to search engines and AI crawlers.
+# No crawl delay or restrictions on rendering resources.
+User-agent: *
+Allow: /
+
+Sitemap: https://real-jw.github.io/sitemap.xml

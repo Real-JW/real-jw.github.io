@@ -1,0 +1,27 @@
+{
+  "url": "https://real-jw.github.io/",
+  "googleSiteVerification": "",
+  "googleSiteVerificationFile": "googlec205ab2e97d1722b.html",
+  "pages": {
+    "index.html": {
+      "title": "Jiawen Wu | ZKP Hardware, Hardware Security & LLM Agents for EDA",
+      "description": "Jiawen Wu is a Ph.D. student at Texas A&M University researching zero-knowledge proofs (ZKP), hardware accelerators, hardware security, and LLM agents for EDA."
+    },
+    "aboutMe.html": {
+      "title": "About Jiawen Wu | Ph.D. Student at Texas A&M",
+      "description": "Learn about Jiawen Wu's Ph.D. studies at Texas A&M University, education, and research in ZKP hardware, hardware security, and LLM agents for EDA."
+    },
+    "research.html": {
+      "title": "Jiawen Wu's Research | ZKP Hardware, Hardware Security & LLM Agents for EDA",
+      "description": "Explore Jiawen Wu's publications and research in zero-knowledge proofs (ZKP), hardware security, cryptographic hardware acceleration, and LLM agents for EDA."
+    },
+    "blog.html": {
+      "title": "Jiawen Wu's Blog | Research News & Projects",
+      "description": "Research news and projects from Jiawen Wu, a Texas A&M Ph.D. student working on ZKP hardware, hardware security, and LLM agents for EDA."
+    },
+    "contact.html": {
+      "title": "Contact Jiawen Wu | Texas A&M Ph.D. Student",
+      "description": "Contact Jiawen Wu at Texas A&M University and find his CV, Google Scholar, GitHub, and LinkedIn profiles."
+    }
+  }
+}

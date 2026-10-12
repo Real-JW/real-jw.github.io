@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{title}}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" media="screen" />
+    <style>
+      img {
+        align-self: center;
+      }
+    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+    {{metadata}}
+  </head>
+  <body>
+    <div id='nav-container'>{{nav}}</div>
+
+    <main class="main">
+      <div class="mainContainer">
+        <div class="dataContainer">
+          <div id='blog-posts-container'>{{blog-posts}}</div>
+
+          <a href="./index.html" style="text-decoration: none;">
+            <div class="home">
+              <div class="bio" style="text-align: center;">
+                Back to Home
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div id='footer-container'>{{footer}}</div>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

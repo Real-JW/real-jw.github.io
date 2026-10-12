@@ -283,7 +283,7 @@ nav li {
   justify-content: center;   /* centre the button inside its flex cell */
 }
 
-      nav button {
+      nav :is(button, .nav-link) {
         background: none;
         border: none;
         color: #000000dd;
@@ -299,7 +299,7 @@ nav li {
         overflow: hidden;
       }
 
-      nav button::before {
+      nav :is(button, .nav-link)::before {
         content: '';
         position: absolute;
         top: 0;
@@ -312,27 +312,27 @@ nav li {
         transition: opacity 0.3s ease;
       }
 
-      nav button:hover::before {
+      nav :is(button, .nav-link):hover::before {
         opacity: 1;
       }
 
-      nav button:hover {
+      nav :is(button, .nav-link):hover {
         color: #500000;
         transform: translateY(-1px);
       }
 
-      nav button.active {
+      nav :is(button, .nav-link).active {
         /* background: #002fa7; */
         background: #500000;
         color: white;
         box-shadow: 0 4px 12px rgba(19, 19, 19, 0.25);
       }
 
-      nav button.active::before {
+      nav :is(button, .nav-link).active::before {
         display: none;
       }
 
-      nav button.active:hover {
+      nav :is(button, .nav-link).active:hover {
         background: #500000;
         transform: translateY(-1px);
       }
@@ -349,7 +349,7 @@ nav li {
           gap: 2px;
         }
         
-        nav button {
+        nav :is(button, .nav-link) {
           font-size: 11px;
           padding: 10px 10px;
         }
@@ -369,25 +369,25 @@ nav li {
         background: rgba(0, 0, 0, 0.9);
       }
 
-      .dark-mode nav button {
+      .dark-mode nav :is(button, .nav-link) {
         color: #bdbdbd;
       }
 
-      .dark-mode nav button:hover {
+      .dark-mode nav :is(button, .nav-link):hover {
         color: #ffffff;
       }
 
-      .dark-mode nav button::before {
+      .dark-mode nav :is(button, .nav-link)::before {
         background: rgba(255, 255, 255, 0.05);
       }
 
-      .dark-mode nav button.active {
+      .dark-mode nav :is(button, .nav-link).active {
         background: #ffffff;
         color: #131313;
         box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
       }
 
-      .dark-mode nav button.active:hover {
+      .dark-mode nav :is(button, .nav-link).active:hover {
         background: #f0f0f0;
       }
 
@@ -420,7 +420,7 @@ body.dark-mode {
   color: #f0f0f0;
 }
 
-.dark-mode button {
+.dark-mode :is(button, .nav-link) {
   background-color: #252525;
   color: #ffffff;
 }
@@ -476,12 +476,6 @@ background: rgba(0, 0, 0, 0.7);
   color: #ffffff;
 }
 
-.dark-mode nav a {
-  color: #ffffff;
-}
-.dark-mode nav a:hover {
-  color: #939393;
-}
 
 /* Highlight text styling */
 .highlight-text {
@@ -510,4 +504,23 @@ background: rgba(0, 0, 0, 0.7);
   /* font-family: "arial", "helvetica", "sans-serif"; */
   margin-top: 12px;
   margin-bottom: 12px;
+}
+
+/* Preserve button geometry when navigation uses crawlable links. */
+nav .nav-link {
+  display: inline-block;
+  vertical-align: top;
+  line-height: normal;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav .nav-link {
+    top: 1px;
+  }
+}
+
+/* Semantic titles retain the existing card typography and spacing. */
+h3.bio {
+  margin: 0;
 }

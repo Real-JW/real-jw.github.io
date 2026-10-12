@@ -1,121 +1,71 @@
-# Modular Website Structure
+# Jiawen Wu's personal website
 
-This website has been refactored to use a modular architecture with organized file structure that separates content from presentation and makes updates easier.
+GitHub Pages serves the generated HTML files at the repository root. Every page
+contains its navigation and content before JavaScript runs, including the homepage
+biography, education, and publications. The existing card layout, colors,
+responsive typography, dark mode, and logo interaction are retained.
 
-## File Structure
+## Edit and build
 
-```
-├── assets/
-│   ├── css/
-│   │   └── style.css           # Main stylesheet
-│   ├── js/
-│   │   └── script.js           # Main JavaScript
-│   ├── images/
-│   │   ├── Banna.jpg           # Banner image
-│   │   ├── ProfilePic.png      # Profile picture
-│   │   ├── profile.png         # Additional profile image
-│   │   └── image002.png        # Other images
-│   └── documents/
-│       ├── DataCenter.pdf      # Research documents
-│       ├── FPGA.pdf           
-│       ├── GhostResNet.pdf    
-│       └── Temp.pdf           
-├── data/
-│   ├── profile.json            # Personal information
-│   ├── publications.json       # Research publications
-│   └── blog.json              # Blog posts and projects
-├── includes/
-│   ├── nav.html               # Navigation menu
-│   ├── footer.html            # Footer component
-│   ├── profile-header.html    # Profile display
-│   ├── about-summary.html     # About section
-│   ├── education.html         # Education history
-│   ├── social-links.html      # Social media links
-│   ├── publications.html      # Publications container
-│   └── blog-posts.html        # Blog posts container
-├── pages/
-│   ├── index.html             # Home page
-│   ├── aboutMe.html           # About page
-│   ├── contact.html           # Contact page
-│   ├── research.html          # Research page
-│   └── blog.html              # Blog page
-└── favicon.ico                # Site icon
+Python 3.9+ is the only build dependency. Run from this repository:
+
+```sh
+python3 scripts/build_site.py
+python3 scripts/build_site.py --check
+python3 scripts/check_site.py
 ```
 
-### Data Files (`data/`)
+Commit the generated root HTML files, `sitemap.xml`, and `robots.txt` together with
+source changes before deploying. The GitHub Actions check rejects stale output
+and validates the public pages. Existing GitHub Pages hosting can continue to
+publish the repository root; no hosting migration or JavaScript runtime is needed.
 
-- `profile.json` - Personal information, education, and contact details
-- `publications.json` - Research publications list
-- `blog.json` - Blog posts and project updates
+| Source | Purpose |
+| --- | --- |
+| `data/profile.json` | Biography, research interests, education, public profiles, and last-updated date |
+| `data/publications.json` | Publication titles, authors, venues, and links |
+| `data/blog.json` | Research news and projects |
+| `data/site.json` | Site URL, unique page titles/descriptions, Google verification filename or optional HTML-tag token |
+| `_templates/*.html` | Page layouts; edit these instead of the generated root HTML files |
+| `includes/*.html` | Shared component templates and SEO metadata |
+| `assets/css/` | Existing visual styling |
+| `assets/js/` | Dark-mode and logo interactions; content does not depend on these |
 
-### Modular Components (`includes/`)
+Set `profile.json`'s `lastUpdated` when editing the profile. News dates render in
+English without browser timezone shifts. Items with no destination URL render as
+text instead of links that reload the current page. The build escapes content and
+checks link protocols before inserting it into HTML.
 
-- `nav.html` - Navigation menu
-- `footer.html` - Footer with copyright and last update
-- `profile-header.html` - Profile information display
-- `about-summary.html` - About me summary
-- `education.html` - Education history
-- `social-links.html` - Social media links
-- `publications.html` - Publications list container
-- `blog-posts.html` - Blog posts container
+The Jekyll configuration excludes build sources from the published site. The
+sitemap lists only the five public pages, using `/` as the homepage canonical.
+The generated crawler rules permit all crawlers, including AI search and training
+crawlers, and allow CSS, JavaScript, images, and public PDFs. Crawler permission is
+not a guarantee of indexing, rankings, or inclusion in AI answers.
 
-### Pages
+## Google Search Console
 
-- `index.html` - Home page (uses profile-header, about-summary, publications, social-links)
-- `aboutMe.html` - About page (uses education component)
-- `contact.html` - Contact page (uses social-links)
-- `research.html` - Research page (uses publications)
-- `blog.html` - Blog page (uses blog-posts)
+Ownership and indexing must be verified against the deployed site using your
+Google account; local checks cannot confirm Google's index.
 
-### Assets (`assets/`)
+1. Open [Google Search Console](https://search.google.com/search-console) and add
+   the URL-prefix property `https://real-jw.github.io/`.
+2. Choose **HTML file** verification. The supplied file is already stored in
+   `data/googlec205ab2e97d1722b.html`, and `googleSiteVerificationFile` in
+   `data/site.json` tells the build to copy it unchanged to the site root.
+   HTML-tag verification is also supported through `googleSiteVerification`.
+3. Rebuild and deploy the site through your normal GitHub Pages process. Check
+   `https://real-jw.github.io/googlec205ab2e97d1722b.html`, then return to Search
+   Console and click **Verify**. Keep this file deployed after verification.
+4. Submit `sitemap.xml` in **Sitemaps**.
+5. Use **URL Inspection** on the homepage and the other four pages. Run **Test
+   live URL**, review the retrieved HTML, and request indexing where appropriate.
+6. Monitor indexing and search impressions for your name, ZKP hardware, hardware
+   security, and LLM agents for EDA.
 
-- `css/style.css` - Main stylesheet
-- `js/script.js` - JavaScript functionality
-- `images/` - All image files organized by type
-- `documents/` - PDF documents and research papers
+Validate the deployed profile markup with Google's
+[Rich Results Test](https://search.google.com/test/rich-results).
 
-### JavaScript (`script.js`)
-- Loads all data files
-- Renders components dynamically
-- Updates content automatically
-- Handles dark mode and navigation
-
-## Benefits
-
-1. **DRY (Don't Repeat Yourself)**: Common elements like navigation, footer, and social links are defined once
-2. **Easy Updates**: Content can be updated by modifying JSON files without touching HTML
-3. **Consistent Data**: Profile information is centralized and used across all pages
-4. **Automatic Updates**: Copyright year and last modified dates update automatically
-5. **Maintainable**: Clear separation between data, presentation, and behavior
-
-## To Update Content
-
-### Personal Information
-Edit `data/profile.json`:
-- Update email, location, research interests
-- Modify education history
-- Change social media links
-
-### Publications
-Edit `data/publications.json`:
-- Add new publications
-- Update existing entries
-- Remove outdated items
-
-### Blog Posts/Projects
-Edit `data/blog.json`:
-- Add news announcements
-- Include new projects
-- Update links and descriptions
-
-### Navigation or Footer
-Edit the respective files in `includes/` directory.
-
-## Auto-Updating Features
-
-- Copyright year updates automatically each year
-- Last modified date updates based on profile data or file modification
-- Profile information is consistent across all pages
-- Research interests are automatically highlighted on the home page
-
-This modular approach makes the website much easier to maintain while preserving the original design and functionality.
+Google's instructions:
+[ownership verification](https://support.google.com/webmasters/answer/9008080),
+[URL inspection](https://support.google.com/webmasters/answer/9012289), and
+[sitemap submission](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap).

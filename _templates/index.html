@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{title}}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" media="screen" />
+    <style>
+      img {
+        align-self: center;
+      }
+    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/logo.css">
+    {{metadata}}
+  </head>
+  <body>
+    <div id='nav-container'>{{nav}}</div>
+
+    <main class="main">
+      <div class="mainContainer">
+        <div class="box0">
+          <div id='profile-header-container'>{{profile-header}}</div>
+        </div>
+      </div>
+
+      <div class="mainContainer">
+        <div class="dataContainer">
+          <div class="box1">
+            <a href="aboutMe.html" style="text-decoration: none;">
+              <div id='about-summary-container'>{{about-summary}}</div>
+            </a>
+          </div>
+
+          <div id='education-container'>{{education}}</div>
+
+          <div id='publications-container'>{{publications}}</div>
+
+          <div class="box1">
+            <a href="contact.html" style="text-decoration: none;">
+              <h2 class="boxText">
+                Contact
+              </h2>
+            </a>
+            <div id='social-links-container'>{{social-links}}</div>
+          </div>
+
+          <div class="box1 logo-block">
+            <object id="personal-logo" data="assets/images/jiawen-wu.svg"
+                    type="image/svg+xml" aria-hidden="true" tabindex="-1">
+              JIAWEN WU
+            </object>
+            <button id="logo-toggle" class="logo-toggle" type="button"
+                    aria-label="Switch logo to light version" aria-pressed="false"
+                    title="Switch logo to light version"></button>
+          </div>
+        </div>
+      </div>
+
+      <div id='footer-container'>{{footer}}</div>
+    </main>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/logo.js"></script>
+  </body>
+</html>

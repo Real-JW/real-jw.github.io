@@ -1,9 +1,9 @@
 {
   "personal": {
     "name": "Jiawen Wu",
-  "email": "realjw@tamu.edu",
-  "university": "Texas A&M University",
-  "location": "WEB 102, College Station, TX, USA",
+    "email": "realjw@tamu.edu",
+    "university": "Texas A&M University",
+    "location": "WEB 102, College Station, TX, USA",
     "title": "Ph.D. Student",
     "department": "Department of Electrical and Computer Engineering",
     "advisor": "Prof. Jeyavijayan (JV) Rajendran",
@@ -12,8 +12,9 @@
     "researchInterests": [
       "hardware security",
       "computer architecture",
-      "zero-knowledge proofs",
-      "hardware accelerators"
+      "zero-knowledge proofs (ZKP)",
+      "hardware accelerators",
+      "LLM agents for electronic design automation (EDA)"
     ],
     "reviewer": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), IEEE PES Transactions on Smart Grid",
     "profileImage": "assets/images/ProfilePic.png",
@@ -27,7 +28,7 @@
       "period": "Aug 2023 – Jun 2028 (Expected)"
     },
     {
-      "degree": "B.S. in Electrical Engineering", 
+      "degree": "B.S. in Electrical Engineering",
       "institution": "Tianjin University",
       "location": "Tianjin, China",
       "period": "Aug 2019 – Jun 2023"
@@ -59,5 +60,5 @@
       "display": "GitHub"
     }
   ],
-  "lastUpdated": "2026-03-11"
+  "lastUpdated": "2026-10-12"
 }
